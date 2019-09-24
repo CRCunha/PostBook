@@ -1,0 +1,77 @@
+aside{
+    width: 70px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(9,9,16,.15);
+    display: var(--flex);
+    justify-content: var(--space-between);
+    flex-wrap: var(--wrap);
+}
+
+aside .avatarContainer{
+    width: 100%;
+    height: 100px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--flex-end);
+}
+
+aside .avatarContainer .avatarImagem{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    background-color: #3f3f3f;
+    background-image: url("IMG/person.jpeg");
+    background-position: var(--center);
+    background-size: var(--cover);
+    box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.08);
+}
+
+aside .menuContainer{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+}
+
+aside .menuContainer .opMenu{
+    width: 100%;
+    height: 60px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    transition: .5s;
+    cursor: pointer;
+}
+
+aside .menuContainer .opMenu:hover{
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.05);
+    transition: .5s;
+}
+
+
+aside .menuContainer .opMenu img{
+    width: 28%;
+}
+
+aside .logoutContainer{
+    margin-top: 20%;
+    width: 100%;
+    height: 60px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    transition: .5s;
+    cursor: pointer;
+}
+
+aside .logoutContainer:hover{
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.05);
+    transition: .5s;
+}
+
+aside .logoutContainer img{
+    width: 28%;
+}
