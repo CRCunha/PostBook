@@ -17,7 +17,8 @@ function App() {
           <img src={Search} alt="search" />
         </div>  
       </div>
-      <div className="mainContent">
+      <div className="mainContent" id="style-3">
+        <Card />
         <Card />
         <Card />
         <Card />

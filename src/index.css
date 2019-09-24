@@ -81,9 +81,27 @@ main .docChoices{
 }
 
 main .mainContent{
+  height: 75%;
   margin-top: 30px;
   width: 100%;
-  height: 75%;
   display: var(--flex);
   flex-wrap: var(--wrap);
+  overflow: auto;
+}
+
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #00000000;
 }
