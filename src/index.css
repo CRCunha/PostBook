@@ -1,3 +1,19 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bc-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
 :root {
   --flex: flex;
   --center: center;
@@ -8,100 +24,5 @@
   --space-between: space-between;
   --wrap: wrap;
   --nowrap: nowrap;
-  --cover: cover;
-  --corTitulos: rgb(189, 189, 189);
-  /* --fonte-padrao: 'Raleway', sans-serif; */
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #F4F5F7;
-  display: var(--flex);
-  flex-wrap: var(--wrap);
-  justify-content: var(--space-between);
-  align-items: var(--center);
-  width: 100vw;
-  height: 100vh;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-main{
-  width: 70%;
-  height: 97vh;  
-}
-
-main .mainHeader{
-  width: 100%;
-  height: 100px;
-  display: var(--flex);
-  justify-content: var(--space-between);
-  flex-wrap: var(--nowrap);
-  border-bottom: solid 1px rgba(0,0,0,0.05);
-}
-
-main .mainHeader .title{
-  width: 20%;
-  height: 100%;
-  display: var(--flex);
-  justify-content: var(--center);
-  align-items: var(--center);
-  color: var(--corTitulos);
-  font-size: 16pt;
-}
-
-main .mainHeader .controles{
-  width: 10%;
-  height: 100%;
-  display: var(--flex);
-  justify-content: var(--space-around);
-  align-items: var(--center);
-  /* background-color: aqua; */
-}
-
-main .mainHeader .controles img{
-  width: 22%;
-  cursor: pointer;
-}
-
-main .docChoices{
-  width: 100%;
-  height: 140px;
-  display: var(--flex);
-  justify-content: var(--space-between);
-  align-items: var(--flex-end);
-}
-
-main .mainContent{
-  height: 75%;
-  margin-top: 30px;
-  width: 100%;
-  display: var(--flex);
-  flex-wrap: var(--wrap);
-  overflow: auto;
-}
-
-#style-3::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-	background-color: #F5F5F5;
-}
-
-#style-3::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: rgba(0, 0, 0, 0);
-}
-
-#style-3::-webkit-scrollbar-thumb
-{
-	background-color: #00000000;
+  --bc-color: #EFEEF1;
 }
