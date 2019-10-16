@@ -2,10 +2,9 @@ import React from 'react'
 import './navBar.css'
 import Adicionar from './img/plus.png'
 import Logo from './img/PostBook.png'
-import { BrowserRouter, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => (
-    <BrowserRouter>
     <nav>
         <div className="container">
             <div className="logo"><img src={Logo} alt="logo" /></div>
@@ -33,7 +32,6 @@ const NavBar = () => (
             </div>
         </div>
     </nav>
-    </BrowserRouter>
 );
 
 export default NavBar;
