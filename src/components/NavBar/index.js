@@ -1,13 +1,14 @@
 import React from 'react'
 import './navBar.css'
 import Adicionar from './img/plus.png'
+import Logo from './img/PostBook.png'
 import { BrowserRouter, Link } from 'react-router-dom'
 
 const NavBar = () => (
     <BrowserRouter>
     <nav>
         <div className="container">
-            <div className="logo">POST BOOK</div>
+            <div className="logo"><img src={Logo} alt="logo" /></div>
             <div className="menu">
                 <Link to="/">
                     <div className="menuBtn">Home</div>
@@ -24,8 +25,8 @@ const NavBar = () => (
             </div>
             <div className="userControls">
                 <div className="container">
-                    <Link to="/adicionar">
-                        <img src={Adicionar} alt="adicionar" />
+                    <Link to="/adicionarLivro">
+                        <img src={Adicionar} alt="adicionarLivro" />
                     </Link>
                     <div className="avatar"></div>
                 </div>
@@ -34,6 +35,5 @@ const NavBar = () => (
     </nav>
     </BrowserRouter>
 );
-
 
 export default NavBar;

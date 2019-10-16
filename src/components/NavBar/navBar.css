@@ -25,6 +25,12 @@ nav .container .logo{
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
+
+    filter: brightness(0%);
+}
+
+nav .container .logo img {
+    width: 80%;
 }
 
 nav .container .menu{
