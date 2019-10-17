@@ -1,12 +1,13 @@
 .cardLivro{
-    width: 250px;
+    width: 225px;
     height: 260px;
 
     background-color: #fff;
     box-shadow:var(--box-shadow);
 
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
 
     transition: .5s;
 }
@@ -32,28 +33,31 @@
     height: 100%;
 
     display: var(--flex);
-    justify-content: var(--felx-start);
+    justify-content: var(--space-between);
     align-items: var(--center);
+    flex-wrap: var(--nowrap);
 }
 
 .cardLivro .cardTop .container .icon{
     width: 50px;
     height: 50px;
 
+    border-radius: 5px;
+
     background-color: #878787;
 }
 
-.cardLivro .title{
-    width: 100%;
-    height: 25%;
+.cardLivro .cardTop .container .title{
+    width: 80%;
+    height: 100%;
 
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
 }
 
-.cardLivro .title .container{
-    width: 85%;
+.cardLivro .cardTop .container .container{
+    width: 80%;
     height: 100%;
     color: #878787;
 
@@ -64,7 +68,7 @@
 
 .cardLivro .infos{
     width: 100%;
-    height: 45%;
+    height: 50%;
 
     display: var(--flex);
     justify-content: var(--center);
@@ -80,4 +84,29 @@
 
     color: var(--font-color);
     font-size: 11pt;
+}
+
+.cardLivro .excluir {
+    width: 100%;
+    height: 20%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.cardLivro .excluir .container{
+    width: 85%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--felx-start);
+    align-items: var(--center);
+}
+
+
+.cardLivro .excluir .container img{
+    width: 12%;
+
+    cursor: pointer;
 }

@@ -62,7 +62,7 @@
 }
 
 .adicionarLivro .container .searchBar .iconSearch img{
-    width: 35%;
+    width: 30%;
 }
 
 .adicionarLivro .container .cards{
@@ -71,7 +71,7 @@
     height: 85%;
 
     display: var(--flex);
-
+    justify-content: var(--flex-start);
     flex-wrap: var(--wrap);
 }
 

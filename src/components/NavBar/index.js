@@ -27,7 +27,7 @@ const NavBar = () => (
                     <Link to="/adicionarLivro">
                         <img src={Adicionar} alt="adicionarLivro" />
                     </Link>
-                    <Link to="/avatar">
+                    <Link to="/perfil">
                         <div className="avatar"></div>
                     </Link>
                 </div>

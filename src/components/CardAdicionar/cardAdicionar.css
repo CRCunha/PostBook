@@ -1,5 +1,5 @@
 .cardAdicionar{
-    width: 235px;
+    width: 220px;
     height: 250px;
 
     display: var(--flex);
@@ -9,8 +9,16 @@
     border: dashed 5px rgba(121, 121, 121, 0.164);
 
     cursor: pointer;
+
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 40px;
 }
 
 .cardAdicionar img{
     width: 35%;
+}
+
+.cardAdicionar img:hover{
+    filter: brightness(100%);
 }

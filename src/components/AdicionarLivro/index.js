@@ -9,7 +9,7 @@ const AdicionarLivro = () => (
         <div className="container">
             <div className="searchBar">
                 <form action="" method="POST">
-                    <input type="text" name="search" id=""/>
+                    <input type="text" name="search" id="" autoComplete="off"/>
                 </form>
                 <div className="iconSearch">
                     <img src={IconSearch} alt="iconSearch" />
