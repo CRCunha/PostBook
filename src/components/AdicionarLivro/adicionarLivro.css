@@ -11,8 +11,70 @@
     width: 95%;
     height: 90%;
 
+    display: var(--flex);
+    justify-content: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+
+.adicionarLivro .container .searchBar{
+    width: 70%;
+    height: 50px;
+
     background-color: #fff;
 
     box-shadow: var(--box-shadow);
+
+    display: var(--flex);
+
+    margin-bottom: 40px;
 }
 
+
+.adicionarLivro .container .searchBar form{
+    width: 90%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.adicionarLivro .container .searchBar form input[type='text']{
+    width: 90%;
+    height: 90%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 14pt;
+    color: var(--font-color);
+}
+
+.adicionarLivro .container .searchBar .iconSearch{
+    width: 10%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.adicionarLivro .container .searchBar .iconSearch img{
+    width: 35%;
+}
+
+.adicionarLivro .container .cards{
+    overflow-y: auto;
+    width: 90%;
+    height: 85%;
+
+    display: var(--flex);
+
+    flex-wrap: var(--wrap);
+}
+
+.adicionarLivro .container .cards::-webkit-scrollbar{
+    background-color: transparent;
+}
