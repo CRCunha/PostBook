@@ -1,6 +1,6 @@
 .cardAdicionar{
-    width: 220px;
-    height: 250px;
+    width: 280px;
+    height: 195px;
 
     display: var(--flex);
     justify-content: var(--center);

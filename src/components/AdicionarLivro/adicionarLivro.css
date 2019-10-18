@@ -71,7 +71,7 @@
     height: 85%;
 
     display: var(--flex);
-    justify-content: var(--flex-start);
+    justify-content: var(--center);
     flex-wrap: var(--wrap);
 }
 

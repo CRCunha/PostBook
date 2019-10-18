@@ -1,0 +1,30 @@
+.modalAdicionar{
+    width: 550px;
+    height: 400px;
+
+    position: fixed;
+
+    background-color: #fff;
+
+    box-shadow: var(--box-shadow);
+}
+
+.modalAdicionar .containerClose{
+    width: 100%;
+    height: 70px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.modalAdicionar .containerClose .container{
+    width: 90%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-end);
+    align-items: var(--center);
+
+    cursor: pointer;
+}
