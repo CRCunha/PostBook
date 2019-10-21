@@ -19,4 +19,34 @@
 .cardLivro .container{
     width: 95%;
     height: 95%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+.cardLivro .container .cardTitle{
+    margin-top: 10px;
+    width: 90%;
+    height: 55%;
+
+    color: #878787;
+}
+
+.cardLivro .container .cardImage{
+    width: 90%;
+    height: 45%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+}
+
+.cardLivro .container .cardImage .image{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 100%;
+
+    background-color: #00CEC2;
 }
