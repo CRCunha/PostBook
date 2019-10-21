@@ -8,7 +8,10 @@ const Posts = () => (
     <div className="posts">
         <div className="container">
             <PostMensagem />
-            <p />
+            <PostBook />
+            <PostMensagem />
+            <PostBook />
+            <PostMensagem />
             <PostBook />
         </div>
     </div>

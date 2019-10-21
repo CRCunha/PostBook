@@ -1,13 +1,15 @@
 .postMensagem{
-    width: 60%;
+    width: 90%;
     height: 120px;
 
     background-color: #fff;
 
-    border-radius: 8px;
-
     display: var(--flex);
     flex-wrap: var(--nowrap);
+
+    box-shadow: var(--box-shadow);
+
+    margin-bottom: 40px;
 }
 
 .postMensagem .avatarContainer{

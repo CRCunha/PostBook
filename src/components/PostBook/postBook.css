@@ -1,13 +1,15 @@
 .postBook{
-    width: 60%;
+    width: 90%;
     height: 120px;
 
     background-color: #fff;
 
-    border-radius: 8px;
-
     display: var(--flex);
     flex-wrap: var(--nowrap);
+
+    box-shadow: var(--box-shadow);
+
+    margin-bottom: 40px;
 }
 
 .postBook .bookContainer{
@@ -19,9 +21,6 @@
     align-items: var(--center);
 
     background-color: #878787;
-
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 
 
