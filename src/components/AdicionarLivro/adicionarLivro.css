@@ -8,14 +8,19 @@
 }
 
 .adicionarLivro .container{
-    width: 95%;
+    width: 81%;
     height: 90%;
 
     display: var(--flex);
-    justify-content: var(--center);
+    justify-content: var(--flex-start);
     flex-wrap: var(--wrap);
+
+    overflow-y: auto;
 }
 
+::-webkit-scrollbar {
+    background-color: transparent;
+}
 
 .adicionarLivro .container .searchBar{
     width: 70%;
