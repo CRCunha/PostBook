@@ -5,6 +5,7 @@
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
+    flex-wrap: var(--wrap);
 
     border: dashed 5px rgba(121, 121, 121, 0.164);
 

@@ -18,10 +18,10 @@ class CardAdiconar extends React.Component {
     render(){
         return(
             <>  
-            <div className="cardAdicionar">
-                <img onClick={()=>{this.showDialog()}} src={AddIcon} alt="addIcon" />
-            </div>
-            <ModalAdicionar show={this.state.dialog} close={this.hideDialog}/>
+                <div className="cardAdicionar">
+                    <img onClick={()=>{this.showDialog()}} src={AddIcon} alt="addIcon" />
+                </div>
+                <ModalAdicionar show={this.state.dialog} close={this.hideDialog}/>
             </>
         );
     }

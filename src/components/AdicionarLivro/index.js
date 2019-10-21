@@ -8,7 +8,6 @@ const AdicionarLivro = () => (
         <div className="container">
             <CardLivro />
             <CardLivro />
-            <CardLivro />
             <CardAdicionar />
         </div>
     </div>
