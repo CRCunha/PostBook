@@ -1,0 +1,41 @@
+.postBook{
+    width: 90%;
+    height: 120px;
+
+    background-color: #fff;
+
+    display: var(--flex);
+    flex-wrap: var(--nowrap);
+
+    box-shadow: var(--box-shadow);
+
+    margin-bottom: 40px;
+}
+
+.postBook .bookContainer{
+    width: 15%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    background-color: #878787;
+}
+
+
+.postBook .textContainer{
+    width: 70%;
+    height: 100%;
+}
+
+.postBook .infosContainer{
+    width: 15%;
+    height: 100%;
+
+    color:  #878787;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}

@@ -27,6 +27,8 @@ nav .container .logo{
     align-items: var(--center);
 
     filter: brightness(0%);
+
+    cursor: pointer;
 }
 
 nav .container .logo img {

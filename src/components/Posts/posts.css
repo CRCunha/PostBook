@@ -8,10 +8,16 @@
 }
 
 .posts .container{
-    width: 95%;
+    width: 60%;
     height: 90%;
 
-    background-color: #fff;
+    display: var(--flex);
+    justify-content: var(--center);
+    flex-wrap: var(--wrap);
 
-    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
 }
