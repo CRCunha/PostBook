@@ -1,18 +1,20 @@
 import React from 'react'
 import './posts.css'
 
-import PostMensagem from '../PostMensagem'
-import PostBook from '../PostBook'
+import CardPost from '../CardPost'
+
+
 
 const Posts = () => (
     <div className="posts">
         <div className="container">
-            <PostMensagem />
-            <PostBook />
-            <PostMensagem />
-            <PostBook />
-            <PostMensagem />
-            <PostBook />
+            <CardPost tag="book" />
+            <CardPost tag="comment" />
+            <CardPost tag="other" />
+            <CardPost tag="comment" />
+            <CardPost tag="other" />
+            <CardPost tag="book" />
+            <CardPost tag="book" />
         </div>
     </div>
 );

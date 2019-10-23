@@ -8,14 +8,18 @@
 }
 
 .posts .container{
-    width: 60%;
-    height: 90%;
+    margin-left: 4%;
+
+    width: 92%;
+    height: 95%;
 
     display: var(--flex);
-    justify-content: var(--center);
+    justify-content: var(--flex-start);
     flex-wrap: var(--wrap);
 
     overflow-y: auto;
+
+    margin-top: 20px;
 }
 
 ::-webkit-scrollbar{

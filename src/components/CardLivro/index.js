@@ -8,4 +8,6 @@ const CardLivro = (props) => (
     </div>
 );
 
+// Fazer divisão para controle de exclusão e edição
+
 export default CardLivro;
