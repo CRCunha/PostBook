@@ -1,0 +1,33 @@
+{
+  "name": "api-merenda",
+  "version": "0.0.1",
+  "description": "Api criada para estudar Java scrip",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianoRC/Merenda.git"
+  },
+  "keywords": [
+    "Merenda",
+    "JavaScript",
+    "Node"
+  ],
+  "author": "-",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CristianoRC/Merenda/issues"
+  },
+  "homepage": "https://github.com/CristianoRC/Merenda#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dev": "^0.1.3",
+    "express": "^4.17.0",
+    "mysql": "^2.17.1",
+    "run": "^1.4.0"
+  }
+}

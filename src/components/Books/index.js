@@ -1,6 +1,6 @@
 import React from 'react'
 import './books.css'
-import BooksCard from '../BooksCard'
+import ListarLivros from '../ListarLivros'
 
 const Books = () => (
     <div className="books">
@@ -14,8 +14,7 @@ const Books = () => (
                 </form>
             </div>
             <div className="booksContainer">
-                <BooksCard />
-                <BooksCard />
+                <ListarLivros />
             </div>
         </div>
     </div>
