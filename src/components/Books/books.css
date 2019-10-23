@@ -61,6 +61,7 @@
     background-color: transparent;
     background-image: url('IMG/search.png');
     background-position: var(--center);
+    background-size: 30%;
     background-repeat: no-repeat;
 
     outline: none;

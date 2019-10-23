@@ -6,8 +6,8 @@ import CardAdicionar from '../CardAdicionar'
 const AdicionarLivro = () => (
     <div className="adicionarLivro">
         <div className="container">
-            <CardLivro title="Clean Code"/>
-            <CardLivro title="UI/UX Design" />
+            <CardLivro indent="l1" infos='The Clean Coder' />
+            <CardLivro indent="l2" infos='UX Design' />
             <CardAdicionar />
         </div>
     </div>
