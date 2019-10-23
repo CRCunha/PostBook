@@ -35,7 +35,7 @@
 
 .cardLivro .container .cardImage{
     width: 90%;
-    height: 45%;
+    height: 35%;
 
     display: var(--flex);
     justify-content: var(--flex-start);
