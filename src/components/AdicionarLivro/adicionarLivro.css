@@ -8,11 +8,12 @@
 }
 
 .adicionarLivro .container{
+    margin-top: 40px;
     width: 81%;
     height: 90%;
 
     display: var(--flex);
-    justify-content: var(--flex-start);
+    justify-content: var(--center);
     flex-wrap: var(--wrap);
 
     overflow-y: auto;

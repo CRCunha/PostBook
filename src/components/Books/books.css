@@ -1,0 +1,83 @@
+.books{
+    width: 100%;
+    height: 85vh;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.books .container{
+    width: 98%;
+    height: 95%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+.books .container .search{
+    width: 70%;
+    height: 60px;
+
+    margin-top: 20px;
+
+    background-color: #fff;
+
+    box-shadow: var(--box-shadow);
+}
+
+.books .container .search form{
+    width: 100%;
+    height: 100%;
+
+    display: var(--flex);
+    flex-wrap: var(--nowrap);
+}
+
+.books .container .search form input[type='text']{
+    margin-left: 20px;
+    width: 88%;
+    height: 96%;
+
+    border: none;
+    outline: none;  
+
+    color: #878787;
+    font-size: 14pt;
+}
+
+.books .container .search form .btnSearch{
+    width: 10%;
+    height: 100%;
+}
+
+.books .container .search form .btnSearch input[type='submit']{
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    background-color: transparent;
+    background-image: url('IMG/search.png');
+    background-position: var(--center);
+    background-size: 30%;
+    background-repeat: no-repeat;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.books .container .booksContainer{
+    width: 95%;
+    height: 80%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    flex-wrap: var(--wrap);
+
+    overflow-y: auto;
+
+    margin-top: 50px;
+}

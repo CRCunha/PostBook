@@ -1,6 +1,6 @@
 .cardAdicionar{
-    width: 280px;
-    height: 195px;
+    width: 170px;
+    height: 220px;
 
     display: var(--flex);
     justify-content: var(--center);
@@ -11,9 +11,8 @@
 
     cursor: pointer;
 
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 40px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .cardAdicionar img{

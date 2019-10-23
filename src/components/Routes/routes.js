@@ -8,6 +8,7 @@ import {
 import ContentHome from '../ContentHome'
 import Posts from '../Posts'
 import AdicionarLivro from '../AdicionarLivro'
+import Books from '../Books'
 import NavBar from '../NavBar'
 
 const Routes = ()=> (
@@ -17,6 +18,7 @@ const Routes = ()=> (
       <Route path="/" exact={true}  component={ContentHome} />
       <Route path='/posts' component={Posts} />
       <Route path='/adicionarLivro' component={AdicionarLivro} /> 
+      <Route path='/books' component={Books} />
       <Route path='/perfil' /> 
     </Switch>
   </BrowserRouter>
