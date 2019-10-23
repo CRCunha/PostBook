@@ -15,6 +15,7 @@ code {
 
 
 :root {
+  --cover: cover;
   --flex: flex;
   --center: center;
   --flex-end: flex-end;

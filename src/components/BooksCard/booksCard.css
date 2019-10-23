@@ -1,0 +1,34 @@
+.booksCard{
+    width: 180px;
+    height: 230px;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    background-color: #fff;
+
+    box-shadow: var(--box-shadow);
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.booksCard:hover{
+    width: 200px;
+    height: 250px;
+
+    transition: .5s;    
+}
+
+.booksCard:first-child{ 
+    background-image: url("./IMG/capaTeste.jpg");
+    background-position: var(--center);
+    background-size: var(--cover);
+}
+
+.booksCard:last-child{
+    background-image: url("./IMG/capaTeste2.jpg");
+    background-position: var(--center);
+    background-size: var(--cover);
+}

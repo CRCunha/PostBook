@@ -23,6 +23,8 @@
     margin-top: 20px;
 
     background-color: #fff;
+
+    box-shadow: var(--box-shadow);
 }
 
 .books .container .search form{
@@ -36,7 +38,7 @@
 .books .container .search form input[type='text']{
     margin-left: 20px;
     width: 88%;
-    height: 97%;
+    height: 96%;
 
     border: none;
     outline: none;  
@@ -64,4 +66,17 @@
     outline: none;
 
     cursor: pointer;
+}
+
+.books .container .booksContainer{
+    width: 95%;
+    height: 80%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    flex-wrap: var(--wrap);
+
+    overflow-y: auto;
+
+    margin-top: 50px;
 }

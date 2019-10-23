@@ -1,6 +1,6 @@
 import React from 'react'
 import './books.css'
-import SearchImg from './IMG/search.png'
+import BooksCard from '../BooksCard'
 
 const Books = () => (
     <div className="books">
@@ -12,6 +12,10 @@ const Books = () => (
                         <input type="submit" name="enviar" value="" />
                     </div>
                 </form>
+            </div>
+            <div className="booksContainer">
+                <BooksCard />
+                <BooksCard />
             </div>
         </div>
     </div>
