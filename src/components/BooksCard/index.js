@@ -5,4 +5,7 @@ const BooksCard = () => (
     <div className="booksCard" ></div>
 );
 
-export default BooksCard;
+// usar border com cor simbilizando a tab do livro
+
+
+export default BooksCard; 
