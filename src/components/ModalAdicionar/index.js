@@ -1,6 +1,7 @@
 import React from 'react'
 import './modalAdicionar.css'
 import CloseIcon from './IMG/close.png'
+import Post from './post'
 
 class ModalAdicionar extends React.Component {
     render(){
@@ -12,6 +13,7 @@ class ModalAdicionar extends React.Component {
                         <img onClick={()=>{this.props.close()}} src={CloseIcon} alt="close" />
                     </div>
                 </div>
+                <Post />
             </div> : ''
             
         );
