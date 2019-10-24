@@ -18,7 +18,7 @@ export default class Livros extends React.Component {
     render() {
         return (
             <>
-                { this.state.Livros.map(Livros => <BooksCard titulo={Livros.titulo}></BooksCard>)}
+                { this.state.Livros.map(Livros => <BooksCard titulo={Livros.titulo} capa={Livros.capa}></BooksCard>)}
             </>
         )
     }

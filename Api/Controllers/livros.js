@@ -4,27 +4,20 @@ const router = express.Router();
 const bancoDeDados = require('./bancoDeDados');
 
 
-// CADASTRA UM NOVO ALIMENTO
-// router.post('/', (request, response) => {
-//     let titulo = request.body.titulo;
-//     let text = request.body.descricao;
-//     if (titulo && text) {
-//     bancoDeDados.conexao.query(`select * from Categoria where Titulo = '${titulo}' and Deletado = false`, (naoExiste, existe) => {
-//         if (existe.length > 0)
-//             response.status(400).json({ existe: 'A categoria informada já existe!' }).send();
-//         else {
-//             bancoDeDados.conexao.query(`insert into Categoria (Titulo, Text) values ('${titulo}', '${text}')`, (erro, resposta) => {
-//                 if (!erro)
-//                     response.status(200).json({ Resposta: resposta });
-//                 else
-//                     response.status(400).json({ Erro: erro }).send();
-//             });
-//         }
-//     });
-// } else
-// response.status(404).send( 'Erro na validação dos campos!');
-
-// });
+// CADASTRA UM NOVO LIVRO
+router.post('/', (request, response) => {
+    let titulo = request.body.titulo;
+    let capa = request.body.capa;
+    if (titulo && capa) {
+        bancoDeDados.conexao.query(`insert into Livros (titulo, capa) values ('${titulo}', '${capa}')`, (erro, resposta) => {
+            if (!erro)
+                response.status(200).json({ Resposta: resposta });
+            else
+                response.status(400).json({ Erro: erro }).send();
+        });
+    } else
+response.status(404).send( 'Erro na validação dos campos!');
+});
 
 // RETORNA TODAS OS LIVROS
 router.get('/', (request, response) => {
@@ -36,7 +29,7 @@ router.get('/', (request, response) => {
         else {
             response.status(400).json({ erro: erro });
         }
-    });
+    }); 
 });
 
 // DELETA AS CATEGORIAS INFORMADAS
@@ -84,7 +77,5 @@ router.get('/', (request, response) => {
 //         });
 
 // });
-
-
 
 module.exports = (api) => api.use('/api/livros', router);
