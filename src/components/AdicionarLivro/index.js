@@ -6,8 +6,8 @@ import CardAdicionar from '../CardAdicionar'
 const AdicionarLivro = () => (
     <div className="adicionarLivro">
         <div className="container">
-            <ListarLivros />
             <CardAdicionar />
+            <ListarLivros />
         </div>
     </div>
 )
