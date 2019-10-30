@@ -55,6 +55,49 @@
     color: #EFEDF1;
 }
 
+.cardPost .title{
+    width: 100%;
+    height: 30px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.cardPost .title .container{
+    width: 85%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+
+    color: var(--font-color-2);  
+}
+
+.cardPost .texto{
+    margin-top: 5px; 
+
+    width: 100%;
+    height: 95px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.cardPost .texto .container{
+    width: 85%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--flex-start);
+
+    color: var(--font-color);  
+    font-size: 11pt;
+}
+
 #book{
     background-color: #FFD333;
 }

@@ -1,0 +1,18 @@
+.cardPostAdicionar{
+    width: 380px;
+    height: 210px;
+
+    border: dashed 5px rgba(121, 121, 121, 0.164);
+
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.cardPostAdicionar img{
+    cursor: pointer;
+    width: 20%;
+}

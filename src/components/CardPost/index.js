@@ -27,6 +27,12 @@ const CardPost = (props) => (
                 <div className="data">{dia + " " + mes + " " + ano}</div>
             </div>
         </div>
+        <div className="title">
+            <div className="container">{props.titulo}</div>
+        </div>
+        <div className="texto">
+            <div className="container">{props.text}</div>
+        </div>
     </div>
 );
 

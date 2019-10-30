@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 29-Out-2019 às 20:45
+-- Tempo de geração: 30-Out-2019 às 14:04
 -- Versão do servidor: 10.4.6-MariaDB
 -- versão do PHP: 7.1.31
 
@@ -54,7 +54,31 @@ INSERT INTO `Livros` (`titulo`, `id`, `capa`) VALUES
 ('POR QUE FAZEMOS O QUE FAZEMOS?', 22, 'https://statics.livrariacultura.net.br/products/capas_lg/096/46331096.jpg'),
 ('Direito Administrativo Descomplicado', 23, 'https://images-na.ssl-images-amazon.com/images/I/81ZQ8JEnYIL.jpg'),
 ('A Riqueza da Vida Simples', 24, 'http://www.gustavocerbasi.com.br/wp-content/uploads/2016/07/livro-1.jpg'),
-('The Loney', 25, 'https://i.dailymail.co.uk/i/pix/2016/07/04/16/35F22A7000000578-3673870-image-a-17_1467645858506.jpg');
+('The Loney', 25, 'https://i.dailymail.co.uk/i/pix/2016/07/04/16/35F22A7000000578-3673870-image-a-17_1467645858506.jpg'),
+('1', 26, '1'),
+('1', 27, '1');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `Posts`
+--
+
+CREATE TABLE `Posts` (
+  `tag` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL,
+  `titulo` varchar(255) NOT NULL,
+  `texto` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `Posts`
+--
+
+INSERT INTO `Posts` (`tag`, `id`, `titulo`, `texto`) VALUES
+('book', 6, 'Post Sobre Livro', 'Este post fala sobre um livro qualquer'),
+('other', 7, 'Post Qualquer', 'Este post fala sobre um assunto qualquer'),
+('comment', 8, 'Post Comment', 'Este post comenta algo sobre livros');
 
 --
 -- Índices para tabelas despejadas
@@ -67,6 +91,12 @@ ALTER TABLE `Livros`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `Posts`
+--
+ALTER TABLE `Posts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -74,7 +104,13 @@ ALTER TABLE `Livros`
 -- AUTO_INCREMENT de tabela `Livros`
 --
 ALTER TABLE `Livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT de tabela `Posts`
+--
+ALTER TABLE `Posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
