@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import BooksCard from '../BooksCard'
+import CardLivrotHome from './cardLivroHome';
 
 export default class Livros extends React.Component {
     state = {
@@ -18,7 +18,7 @@ export default class Livros extends React.Component {
     render() {
         return (
             <>
-                { this.state.Livros.map(Livros => <BooksCard titulo={Livros.titulo} capa={Livros.capa} identificador={Livros.id}></BooksCard>)}
+                { this.state.Livros.map(Livros => <CardLivrotHome titulo={Livros.titulo} capa={Livros.capa} identificador={Livros.id}></CardLivrotHome>)}
             </>
         )
     }

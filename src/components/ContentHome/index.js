@@ -1,6 +1,7 @@
 import React from 'react'
 import './contentHome.css'
 import Posts from './posts'
+import Livros from './livros'
 
 const ContentHome = () => (
     <div className="contentHome">
@@ -18,7 +19,11 @@ const ContentHome = () => (
                 </div>
             </div>
             <div className="right">
-                <div className="top" id="div"></div>
+                <div className="top" id="div">
+                    <div className="container">
+                        <Livros />
+                    </div>
+                </div>
                 <div className="bot" id="div">
                     <div className="container">
                         <Posts />

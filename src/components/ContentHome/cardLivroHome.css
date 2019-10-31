@@ -1,0 +1,34 @@
+.cardLivroHome{
+    width: 100%;
+    height: 120px;
+
+    margin-bottom: 10px;
+
+    display: var(--flex);
+    flex-wrap: var(--nowrap);
+
+    margin-bottom: 20px;
+}
+
+.cardLivroHome .capa{
+    width: 95px;
+    height: 100%;
+}
+
+.cardLivroHome .capa img{
+    width: 95px;
+    height: 100%;
+}
+
+.cardLivroHome .titulo{
+    margin-left: 10%;
+    width: 60%;
+    height: 100%;
+
+    color: #878787;
+    font-size: 11pt;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+}

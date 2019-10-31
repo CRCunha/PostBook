@@ -90,6 +90,18 @@
     margin-bottom: 30px;
 }
 
+.contentHome .container .right .top .container{
+    width: 90%;
+    height: 90%;
+
+    display: var(--flex);
+    justify-content: var(--space-around);
+    align-items: var(--flex-start);
+    flex-wrap: var(--wrap);
+
+    overflow-y: auto;
+}
+
 .contentHome .container .right .bot{
     width: 100%;
     height: 48%;
