@@ -95,8 +95,24 @@
     height: 48%;
 
     background-color: #fff;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--space-around);
+    flex-wrap: var(--wrap);
 }
 
+.contentHome .container .right .bot .container{
+    width: 90%;
+    height: 85%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--flex-start);
+    flex-wrap: var(--wrap);
+
+    overflow-y: auto;
+}
 
 #div{
     -webkit-box-shadow: 0px 12px 1px -4px rgba(0,0,0,0.07); 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './contentHome.css'
+import Posts from './posts'
 
 const ContentHome = () => (
     <div className="contentHome">
@@ -18,7 +19,11 @@ const ContentHome = () => (
             </div>
             <div className="right">
                 <div className="top" id="div"></div>
-                <div className="bot" id="div"></div>
+                <div className="bot" id="div">
+                    <div className="container">
+                        <Posts />
+                    </div>
+                </div>
             </div>
         </div>
     </div>

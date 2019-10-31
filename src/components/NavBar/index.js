@@ -20,10 +20,10 @@ const NavBar = () => (
                     <div className="menuBtn">Posts</div>
                 </Link>
                 <Link to="/books">
-                    <div className="menuBtn">Books</div>
+                    <div className="menuBtn">Library</div>
                 </Link>
                 <Link to="/grupos">
-                    <div className="menuBtn">Grupos</div>
+                    <div className="menuBtn">Group</div>
                 </Link>
             </div>
             <div className="userControls">

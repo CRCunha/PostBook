@@ -1,0 +1,47 @@
+.cardPostHome{
+    width: 100%;
+    min-height: 80px;
+
+    margin-bottom: 10px;
+
+    display: var(--flex);
+    justify-content: var(--space-between);
+    align-items: var(--center);
+}
+
+.cardPostHome .tag{
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    height: 30px;
+    width: 80px;
+
+    border-radius: 5px;
+
+    color: #fff;
+}
+
+.cardPostHome .texto{
+    width: 60%;
+    height: 80%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+
+    color: #878787;
+    font-size: 11pt;
+}
+
+#book{
+    background-color: #FFD333;
+}
+
+#comment{
+    background-color: #FF9C9A;
+}
+
+#other{
+    background-color: #00CEC2;
+}
