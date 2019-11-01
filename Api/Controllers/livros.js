@@ -8,8 +8,9 @@ const bancoDeDados = require('./bancoDeDados');
 router.post('/', (request, response) => {
     let titulo = request.body.titulo;
     let capa = request.body.capa;
-    if (titulo && capa) {
-        bancoDeDados.conexao.query(`insert into Livros (titulo, capa) values ('${titulo}', '${capa}')`, (erro, resposta) => {
+    let tag = request.body.tag;
+    if (titulo && capa && tag) {
+        bancoDeDados.conexao.query(`insert into Livros (titulo, capa, tag) values ('${titulo}', '${capa}', '${tag}')`, (erro, resposta) => {
             if (!erro)
                 response.status(200).json({ Resposta: resposta });
             else
@@ -22,7 +23,7 @@ response.status(404).send( 'Erro na validação dos campos!');
 // RETORNA TODAS OS LIVROS
 router.get('/', (request, response) => {
 
-    bancoDeDados.conexao.query('select * from Livros', (erro, resultado) => {
+    bancoDeDados.conexao.query(`select * from Livros`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }

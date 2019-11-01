@@ -20,7 +20,7 @@ router.post('/', (request, response) => {
 // RETORNA TODAS OS POSTS
 router.get('/', (request, response) => {
 
-    bancoDeDados.conexao.query('select * from Posts', (erro, resultado) => {
+    bancoDeDados.conexao.query('SELECT * FROM Posts ORDER BY id DESC', (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }
