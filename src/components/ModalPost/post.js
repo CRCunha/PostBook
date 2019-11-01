@@ -35,7 +35,7 @@ export default class Posts extends React.Component {
         })
     }
 
-    render(props) {
+    render() {
         return (
             <form onSubmit={this.enviarPost}>
                 <input type="text" name="titulo" placeholder="Titulo" autoComplete="off" onChange={this.handleTitle}/>

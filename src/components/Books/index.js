@@ -9,7 +9,7 @@ const Books = () => (
                 <form>
                     <input type='text' name='busca' autoComplete='off' />
                     <div className="btnSearch">
-                        <input type="submit" name="enviar" value="" />
+                        <input type="submit" name="enviar" value=""/>
                     </div>
                 </form>
             </div>
@@ -18,6 +18,7 @@ const Books = () => (
             </div>
         </div>
     </div>
+    
 );
 
 export default Books;

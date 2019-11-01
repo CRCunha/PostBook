@@ -50,7 +50,7 @@
     border: none;
     border-bottom: solid 2px rgba(0,0,0,0.08);
 
-    color: #cacaca;
+    color: #878787;
     text-align: var(--center);
 
     outline: none;
@@ -62,7 +62,7 @@
 
 .modalAdicionar form input[type="submit"]{
     width: 30%;
-    height: 50px;
+    height: 42px;
 
     border: none;
 
@@ -73,4 +73,23 @@
     font-size: 11pt;
 
     outline: none;
+}
+
+.modalAdicionar form select{
+    width: 32%;
+    height: 30px;
+
+    border: none;
+    border-bottom: solid 2px rgba(0,0,0,0.08);
+
+    background-color: transparent;
+
+    color: #878787;
+    text-align: var(--center);
+
+    outline: none;
+}
+
+.modalAdicionar form select option{
+    text-align: var(--center);
 }

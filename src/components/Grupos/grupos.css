@@ -1,0 +1,16 @@
+.grupos{
+    width: 100%;
+    height: 85vh;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--flex-end);
+}
+.grupos .container{
+    margin-bottom: 20px;
+    width: 85%;
+    height: 90%;
+
+    display: var(--flex);
+    flex-wrap: var(--wrap);
+}
