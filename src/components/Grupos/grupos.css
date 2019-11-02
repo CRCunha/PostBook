@@ -13,4 +13,6 @@
 
     display: var(--flex);
     flex-wrap: var(--wrap);
+
+    overflow-y: auto;
 }

@@ -12,6 +12,7 @@ const Grupos = () => (
             <CardGrupo />
             <CardGrupo />
             <CardGrupo />
+            <CardGrupo />
         </div>
     </div>
 );

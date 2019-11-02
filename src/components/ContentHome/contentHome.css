@@ -64,9 +64,9 @@
     width: 30%;
     height: 100%;
 
-    background-image: url("IMG/saspi.png");
+    /* background-image: url("IMG/saspi.png");
     background-position: var(--center);
-    background-size: var(--cover);
+    background-size: var(--cover); */
 
     background-color: #FECA4F;
 }
@@ -75,24 +75,24 @@
     width: 30%;
     height: 100%;
 
-    background-image: url("IMG/ifsul.jpg");
+    /* background-image: url("IMG/ifsul.jpg");
     background-position: var(--center);
     background-size: 65%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
-    background-color: #fff;
+    background-color: #BBAFC1;
 }
 
 .contentHome .container .center .botton .div4{
     width: 30%;
     height: 100%;
-
+/* 
     background-image: url("IMG/tsi.png");
     background-position: var(--center);
     background-size: 110%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
-    background-color: #fff;
+    background-color: #00DED3;
 }
 
 .contentHome .container .right{

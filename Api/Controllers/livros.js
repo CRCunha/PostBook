@@ -23,7 +23,7 @@ response.status(404).send( 'Erro na validação dos campos!');
 // RETORNA TODAS OS LIVROS
 router.get('/', (request, response) => {
 
-    bancoDeDados.conexao.query(`select * from Livros`, (erro, resultado) => {
+    bancoDeDados.conexao.query(`select * from Livros ORDER BY id DESC`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }
