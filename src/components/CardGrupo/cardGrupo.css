@@ -9,6 +9,8 @@
     margin-left: 50px;
     margin-bottom: 25px;
     margin-top:  26px;
+
+    box-shadow: var(--box-shadow);
 }
 
 .cardGrupo .title{
@@ -30,5 +32,10 @@
     margin-left: -20px;
     margin-top: -20px;
 
+    background-image: url("IMG/capa.jpg");
+    background-position: var(--center);
+    background-size: var(--cover);
     background-color: #ccc;
+
+    box-shadow: var(--box-shadow);
 }

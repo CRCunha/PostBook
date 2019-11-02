@@ -2,14 +2,12 @@ import React from 'react'
 import './grupos.css'
 
 import CardGrupo from '../CardGrupo'
+import CardGrupoAdicionar from '../CardGrupoAdicionar'
 
 const Grupos = () => (
     <div className="grupos">
         <div className="container">
-            <CardGrupo />
-            <CardGrupo />
-            <CardGrupo />
-            <CardGrupo />
+            <CardGrupoAdicionar />
             <CardGrupo />
             <CardGrupo />
             <CardGrupo />
