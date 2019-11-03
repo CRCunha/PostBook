@@ -44,6 +44,7 @@ export default class Posts extends React.Component {
                     <option value="book">Book</option>
                     <option value="comment">Comment</option>
                     <option value="other">Other</option>
+                    <option value="admin">Admin</option>
                 </select>
                 <input type="text" name="texto" placeholder="Texto" autoComplete="off" onChange={this.handleTexto}/>
                 <input type="submit" name="enviar" value="Enviar"/>

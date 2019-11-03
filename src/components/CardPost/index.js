@@ -1,5 +1,6 @@
 import React from 'react'
 import "./cardPost.css"
+import Delete from './IMG/delete.png'
 
 const CardPost = (props) => (
     <div className="cardPost" id={props.identificador}>
@@ -14,6 +15,11 @@ const CardPost = (props) => (
         </div>
         <div className="texto">
             <div className="container">{props.text}</div>
+        </div>
+        <div className="delete">
+            <div className="containerE">
+                <img src={Delete} alt="delete" />
+            </div>
         </div>
     </div>
 );

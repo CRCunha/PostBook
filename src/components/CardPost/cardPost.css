@@ -72,7 +72,7 @@
     justify-content: var(--flex-start);
     align-items: var(--center);
 
-    color: var(--font-color-2);  
+    color: var(--font-color-2); 
 }
 
 .cardPost .texto{
@@ -96,6 +96,32 @@
 
     color: var(--font-color);  
     font-size: 11pt;
+}
+
+.cardPost .delete{
+    margin-top: -10px;
+
+    width: 100%;
+    height: 30px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.cardPost .delete .containerE{
+    width: 90%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-end);
+    align-items: var(--center);
+}
+
+.cardPost .delete .containerE img{
+    width: 8%;
+
+    cursor: pointer;
 }
 
 #book{
