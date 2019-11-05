@@ -1,0 +1,25 @@
+#btn{
+    width: 240px;
+    height: 70px;
+
+    margin-bottom: 50px;
+
+    box-shadow: var(--box-shadow);
+
+    background-color: #fff;
+
+    color: #878787;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+#btn:hover{
+    box-shadow: var(--box-shadow-hover);
+    transition: .5s;
+}

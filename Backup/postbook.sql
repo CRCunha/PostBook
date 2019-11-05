@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 03-Nov-2019 às 10:56
--- Versão do servidor: 10.4.6-MariaDB
--- versão do PHP: 7.1.31
+-- Tempo de geração: 05/11/2019 às 11:51
+-- Versão do servidor: 10.4.8-MariaDB
+-- Versão do PHP: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `Livros`
+-- Estrutura para tabela `Livros`
 --
 
 CREATE TABLE `Livros` (
@@ -36,7 +36,7 @@ CREATE TABLE `Livros` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `Livros`
+-- Despejando dados para a tabela `Livros`
 --
 
 INSERT INTO `Livros` (`titulo`, `id`, `capa`, `tag`) VALUES
@@ -61,7 +61,7 @@ INSERT INTO `Livros` (`titulo`, `id`, `capa`, `tag`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `Posts`
+-- Estrutura para tabela `Posts`
 --
 
 CREATE TABLE `Posts` (
@@ -73,7 +73,7 @@ CREATE TABLE `Posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `Posts`
+-- Despejando dados para a tabela `Posts`
 --
 
 INSERT INTO `Posts` (`tag`, `id`, `titulo`, `texto`, `data`) VALUES
@@ -85,26 +85,48 @@ INSERT INTO `Posts` (`tag`, `id`, `titulo`, `texto`, `data`) VALUES
 ('other', 33, 'Profile', 'Criar Tela de profile', '2019-11-01'),
 ('comment', 34, 'Post dia 2', 'Teste de post do dia 2', '2019-11-02'),
 ('admin', 35, 'Grupos', 'Criar Card Grupos', '2019-11-02'),
-('admin', 36, 'Delete', 'Criar função delete para posts e livros', '2019-11-03');
+('admin', 36, 'Delete', 'Criar função delete para posts e livros', '2019-11-03'),
+('admin', 37, 'Login e Register', 'Fazer o front para o login e register', '2019-11-05'),
+('other', 38, 'Rotas Prontas', 'Todas as Rotas com algum conteudo para mostrar!', '2019-11-05');
+
+-- --------------------------------------------------------
 
 --
--- Índices para tabelas despejadas
+-- Estrutura para tabela `Users`
+--
+
+CREATE TABLE `Users` (
+  `nome` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `avatar` varchar(1250) NOT NULL DEFAULT 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png',
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Índices de tabelas apagadas
 --
 
 --
--- Índices para tabela `Livros`
+-- Índices de tabela `Livros`
 --
 ALTER TABLE `Livros`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `Posts`
+-- Índices de tabela `Posts`
 --
 ALTER TABLE `Posts`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- Índices de tabela `Users`
+--
+ALTER TABLE `Users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas apagadas
 --
 
 --
@@ -117,7 +139,13 @@ ALTER TABLE `Livros`
 -- AUTO_INCREMENT de tabela `Posts`
 --
 ALTER TABLE `Posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+
+--
+-- AUTO_INCREMENT de tabela `Users`
+--
+ALTER TABLE `Users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

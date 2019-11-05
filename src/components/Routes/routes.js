@@ -11,6 +11,7 @@ import AdicionarLivro from '../AdicionarLivro'
 import Books from '../Books'
 import NavBar from '../NavBar'
 import Grupos from '../Grupos'
+import Perfil from '../Perfil'
 
 const Routes = ()=> (
   <BrowserRouter>
@@ -21,7 +22,7 @@ const Routes = ()=> (
       <Route path='/adicionarLivro' component={AdicionarLivro} /> 
       <Route path='/books' component={Books} />
       <Route path='/grupos' component={Grupos} />
-      <Route path='/perfil' /> 
+      <Route path='/perfil' component={Perfil} /> 
     </Switch>
   </BrowserRouter>
 )
