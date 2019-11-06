@@ -1,4 +1,4 @@
-const express = require('express');
+    const express = require('express');
 const router = express.Router();
 
 const bancoDeDados = require('./bancoDeDados');
@@ -33,10 +33,9 @@ router.get('/', (request, response) => {
 
 // DELETE POST
 router.delete('/:id', (request, response) => {
-    let id = request.params('id');
+    let id = request.params.id;
 
-    bancoDeDados.conexao.query(`delete * from Posts where '${id}' = id`, (erro, resultado) => {
-        response.status(200).send('O id foi encontrado e Deletado com sucesso!');
+    bancoDeDados.conexao.query(`delete from Posts where '${id}' = id`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }
