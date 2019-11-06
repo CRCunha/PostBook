@@ -112,16 +112,31 @@
 .cardPost .delete .containerE{
     width: 90%;
     height: 100%;
+}
+
+.cardPost .delete .containerE form{
+    width: 100%;
+    height: 100%;
 
     display: var(--flex);
     justify-content: var(--flex-end);
     align-items: var(--center);
 }
 
-.cardPost .delete .containerE img{
-    width: 8%;
+.cardPost .delete .containerE form input[type="submit"]{
+    background-color: transparent;
+    background-image: url("IMG/delete.png");
+    background-position: var(--center);
+    background-size: 70%;
+    background-repeat: no-repeat;
+
+    border: none;
+
+    padding: 5px 25px;
 
     cursor: pointer;
+
+    outline: none;
 }
 
 #book{

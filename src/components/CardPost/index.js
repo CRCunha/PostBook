@@ -1,27 +1,51 @@
 import React from 'react'
 import "./cardPost.css"
-import Delete from './IMG/delete.png'
+import axios from 'axios'
 
-const CardPost = (props) => (
-    <div className="cardPost" id={props.identificador}>
-        <div className="cardHeader">
-            <div className="containerC">
-                <div className="tag" id={props.tag}>{props.tag}</div>
-                <div className="data">{props.data}</div>
-            </div>
-        </div>
-        <div className="title">
-            <div className="container">{props.titulo}</div>
-        </div>
-        <div className="texto">
-            <div className="container">{props.text}</div>
-        </div>
-        <div className="delete">
-            <div className="containerE">
-                <img src={Delete} alt="delete" />
-            </div>
-        </div>
-    </div>
-);
+export default class CardPost extends React.Component{
+    state = {
+        id: '',
+    }
 
-export default CardPost
+    handleChange = event => {
+        this.setState({ id: event.target.value });
+    }
+    
+    handleSubmit = event => {
+        event.preventDefault();
+
+        axios.delete(`http://localhost:3001/api/posts/${this.props.identificador}`)
+            .then(res => {
+            console.log(res);
+            console.log(res.data);
+        })
+        document.location.reload(true);
+    }
+
+    render() {
+        return(
+            <div className="cardPost" id={this.props.identificador}>
+                <div className="cardHeader">
+                    <div className="containerC">
+                        <div className="tag" id={this.props.tag}>{this.props.tag}</div>
+                        <div className="data">{this.props.data}</div>
+                    </div>
+                </div>
+                <div className="title">
+                    <div className="container">{this.props.titulo}</div>
+                </div>
+                <div className="texto">
+                    <div className="container">{this.props.text}</div>
+                </div>
+                <div className="delete">
+                    <div className="containerE">
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="hidden" id="id" name="id" value={this.props.identificador} onChange={this.handleChange} />
+                            <input type="submit" name="enviarExcluir" value=""/>                       
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        )
+    }
+}
