@@ -1,12 +1,15 @@
-    const express = require('express');
+const express = require('express');
 const router = express.Router();
 
 const bancoDeDados = require('./bancoDeDados');
 
-// RETORNA TODAS OS USERS
+// RETORNA TODAS O USER
 router.get('/', (request, response) => {
 
-    bancoDeDados.conexao.query('SELECT * FROM Users ORDER BY id DESC', (erro, resultado) => {
+    let email = request.body.email;
+    let senha = request.body.senha;
+
+    bancoDeDados.conexao.query(`SELECT * FROM Users where email = ('${email}') and senha = ('${senha}')`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }
@@ -30,11 +33,11 @@ router.post('/', (request, response) => {
     });
 });
 
-// DELETE POST
+// DELETE USER
 router.delete('/:id', (request, response) => {
     let id = request.params.id;
 
-    bancoDeDados.conexao.query(`delete from Posts where '${id}' = id`, (erro, resultado) => {
+    bancoDeDados.conexao.query(`delete from Users where '${id}' = id`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }
