@@ -6,10 +6,7 @@ const bancoDeDados = require('./bancoDeDados');
 // RETORNA TODAS O USER
 router.get('/', (request, response) => {
 
-    let email = request.body.email;
-    let senha = request.body.senha;
-
-    bancoDeDados.conexao.query(`SELECT * FROM Users where email = ('${email}') and senha = ('${senha}')`, (erro, resultado) => {
+    bancoDeDados.conexao.query(`SELECT * FROM Users`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }
