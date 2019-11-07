@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 428 158"
+   height="158"
+   width="428"
+   id="svg1159"
+   version="1.1"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     id="namedview1169"
+     showgrid="false"
+     inkscape:zoom="2.1758403"
+     inkscape:cx="232.60138"
+     inkscape:cy="117.0407"
+     inkscape:window-x="0"
+     inkscape:window-y="35"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1159" />
+  <metadata
+     id="metadata1165">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1163" />
+  <path
+     id="path1171"
+     d="m 146.91882,9.8219664 h 3.72482 l -1e-5,95.2157336 -3.71026,-0.0145 z"
+     style="fill:#8bb743;fill-opacity:1;stroke:#8bb743;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <text
+     id="text1179"
+     y="106.61539"
+     x="14.18154"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';letter-spacing:0px;word-spacing:0px;fill:#89b83f;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:133.33332825px;font-family:Waree;-inkscape-font-specification:'Waree Bold';fill:#89b83f;fill-opacity:1"
+       y="106.61539"
+       x="14.18154"
+       id="tspan1177">V</tspan></text>
+  <text
+     id="text1183"
+     y="53.963078"
+     x="190.84909"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.66666412px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';letter-spacing:0px;word-spacing:0px;fill:#89b83f;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:58.66666794px;font-family:Waree;-inkscape-font-specification:'Waree Bold';fill:#89b83f;fill-opacity:1"
+       y="53.963078"
+       x="190.84909"
+       id="tspan1181">VEG</tspan></text>
+  <text
+     id="text1187"
+     y="104.00616"
+     x="185.71077"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.66666412px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';letter-spacing:0px;word-spacing:0px;fill:#89b83f;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:58.66666794px;font-family:Waree;-inkscape-font-specification:'Waree Bold';fill:#89b83f;fill-opacity:1"
+       y="104.00616"
+       x="185.71077"
+       id="tspan1185">HOUSE</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.66666412px;line-height:1.25;font-family:'Barley Script PERSONAL USE';-inkscape-font-specification:'Barley Script PERSONAL USE';letter-spacing:0px;word-spacing:0px;fill:#89b83f;fill-opacity:1;stroke:none"
+     x="134.77306"
+     y="140.75291"
+     id="text1173"><tspan
+       sodipodi:role="line"
+       id="tspan1171"
+       x="134.77306"
+       y="140.75291"
+       style="font-size:29.33333397px;fill:#89b83f;fill-opacity:1">Espaço Vegano</tspan></text>
+</svg>
