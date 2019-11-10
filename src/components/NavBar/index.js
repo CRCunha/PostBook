@@ -22,8 +22,8 @@ const NavBar = () => (
                 <Link to="/books">
                     <div className="menuBtn">Library</div>
                 </Link>
-                <Link to="/grupos">
-                    <div className="menuBtn">Group</div>
+                <Link to="/donations">
+                    <div className="menuBtn">Donations</div>
                 </Link>
             </div>
             <div className="userControls">

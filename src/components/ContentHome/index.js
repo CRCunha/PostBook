@@ -24,9 +24,10 @@ const ContentHome = () => (
             <div className="center">
                 <div className="div1" id="div">
                     <Carousel loop auto interval={3500} transitionTime>
-                        <div className="slide" id="slide1">Slide 1</div>
-                        <div className="slide" id="slide2">Slide 2</div>
-                        <div className="slide" id="slide3">Slide 3</div>
+                        <div className="slide" id="slide1"></div>
+                        <div className="slide" id="slide2"></div>
+                        <div className="slide" id="slide3"></div>
+                        <div className="slide" id="slide4"></div>
                     </Carousel>
                 </div>
                 <div className="botton">

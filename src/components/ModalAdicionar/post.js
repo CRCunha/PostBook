@@ -49,6 +49,7 @@ export default class PersonList extends React.Component {
                     <option value="Ação">Ação</option>
                     <option value="Terror">Terror</option>
                     <option value="Ciências">Ciências</option>
+                    <option value="Comédia">Comédia</option>
                 </select>
                 <input type="submit" name="enviar" value="Enviar"/>
             </form>

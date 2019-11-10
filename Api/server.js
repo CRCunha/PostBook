@@ -12,6 +12,7 @@ api.use(bodyParser.json());
 require('./Controllers/livros')(api);
 require('./Controllers/posts')(api);
 require('./Controllers/users')(api);
+require('./Controllers/donation')(api);
 
 // =========================================================================//
 

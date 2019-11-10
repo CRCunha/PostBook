@@ -99,6 +99,10 @@
 #slide1{
     background-color: #00C6C1;
 
+    background-image: url("IMG/imagem1.jpg");
+    background-size: var(--cover);
+    background-position: var(--center);
+
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
@@ -107,10 +111,16 @@
     height: 100%;
 
     color: #fff;
+
+    font-size: 16pt;
 }
 #slide2{
     background-color: #FECA4F;
 
+    background-image: url("IMG/imagem2.jpg");
+    background-size: var(--cover);
+    background-position: var(--center);
+
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
@@ -119,10 +129,17 @@
     height: 100%;
 
     color: #fff;
+
+    font-size: 16pt
 }
 #slide3{
     background-color: #FF9C9A;
 
+    background-image: url("IMG/imagem3.jpg");
+    background-size: var(--cover);
+    background-position: var(--center);
+    background-position-x: 85%;
+
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
@@ -131,7 +148,29 @@
     height: 100%;
 
     color: #fff;
+
+    font-size: 16pt
 }
+
+#slide4{
+    background-color: #FF9C9A;
+
+    background-image: url("IMG/imagem4.jpg");
+    background-size: var(--cover);
+    background-position: var(--center);
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+
+    font-size: 16pt
+}
+
 
 .contentHome .container .center .botton{
     width: 100%;

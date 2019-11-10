@@ -9,6 +9,8 @@
     background-color: #fff;
 
     box-shadow: var(--box-shadow);
+
+    z-index: 100;
 }
 
 .modalAdicionar .containerClose{

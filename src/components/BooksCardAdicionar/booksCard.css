@@ -30,8 +30,8 @@
 
 
 .excluir{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 
     position: relative;
 
@@ -46,15 +46,27 @@
 
     background-color: #EFEEF1;
 
+    z-index: 1;
+
     cursor: pointer;
 }
 
-#excluir{
-    width: 25px;
-    height: 25px;
+.excluir form {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 3px;
 }
 
-.excluir img{
-    width: 30px;
-    height: 30px;
+.excluir form input[type="submit"]{
+    border: none;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("IMG/excluir.png");
+    background-size: 60%;
+    background-position: var(--center);
+    background-repeat: no-repeat;
+
+    border-radius: 3px;
 }
