@@ -1,0 +1,35 @@
+.cardUsers{
+    width: 100%;
+    height: 50px;
+
+    display: var(--flex);
+    justify-content: var(--space-between);
+    align-items: var(--center);
+
+    margin-bottom: 35px;
+}
+
+.cardUsers .avatar{
+    width: 18%;
+    height: 90%;
+
+    border-radius: 100%;
+}
+
+.cardUsers .avatar img{
+    width: 100%;
+
+    border-radius: 100%;
+}
+
+.cardUsers .nome{
+    width: 78%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+
+    font-size: 10pt;
+    color: #878787;
+}

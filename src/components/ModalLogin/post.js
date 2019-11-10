@@ -3,13 +3,8 @@ import axios from 'axios';
 
 export default class Posts extends React.Component {
     state = {
-        nome: '',
         email: '',
         senha: '',
-    }
-
-    handleNome = event => {
-        this.setState({ nome: event.target.value });
     }
     handleEmail = event => {
         this.setState({ email: event.target.value });
@@ -18,30 +13,27 @@ export default class Posts extends React.Component {
         this.setState({ senha: event.target.value });
     }
 
-    enviarPost = event => {
+    Login = event => {
         event.preventDefault();
 
-    const Post = {
-        nome: this.state.nome,
+    const Get = {
         email: this.state.email,
         senha: this.state.senha
     };
 
-    axios.post(`http://localhost:3001/api/users/`, Post )
+    axios.get(`http://localhost:3001/api/users/`, Get )
         .then(res => {
             console.log(res);
             console.log(res.data);
-            document.location.reload(true);
         })
     }
 
     render() {
         return (
-            <form onSubmit={this.enviarPost}>
-                <input type="text" placeholder="Nome" onChange={this.handleNome}/>
+            <form onSubmit={this.Login}>
                 <input type="email" placeholder="Email" onChange={this.handleEmail}/>
                 <input type="password" placeholder="Senha" onChange={this.handleSenha}/>
-                <input type="submit" value="Registrar"/>
+                <input type="submit" value="Logar"/>
             </form>
         )
     }
