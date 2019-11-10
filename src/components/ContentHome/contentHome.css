@@ -105,6 +105,8 @@
 
     width: 100%;
     height: 100%;
+
+    color: #fff;
 }
 #slide2{
     background-color: #FECA4F;
@@ -115,9 +117,11 @@
 
     width: 100%;
     height: 100%;
+
+    color: #fff;
 }
 #slide3{
-    background-color: #BBAFC1;
+    background-color: #FF9C9A;
 
     display: var(--flex);
     justify-content: var(--center);
@@ -125,6 +129,8 @@
 
     width: 100%;
     height: 100%;
+
+    color: #fff;
 }
 
 .contentHome .container .center .botton{
@@ -147,7 +153,7 @@
     width: 30%;
     height: 100%;
 
-    background-color: #BBAFC1;
+    background-color: #FF9C9A;
 }
 
 .contentHome .container .center .botton .div4{

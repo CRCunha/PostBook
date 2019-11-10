@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 05/11/2019 às 11:51
+-- Tempo de geração: 10/11/2019 às 10:40
 -- Versão do servidor: 10.4.8-MariaDB
 -- Versão do PHP: 7.3.11
 
@@ -56,7 +56,10 @@ INSERT INTO `Livros` (`titulo`, `id`, `capa`, `tag`) VALUES
 ('Direito Administrativo Descomplicado', 23, 'https://images-na.ssl-images-amazon.com/images/I/81ZQ8JEnYIL.jpg', ''),
 ('A Riqueza da Vida Simples', 24, 'http://www.gustavocerbasi.com.br/wp-content/uploads/2016/07/livro-1.jpg', ''),
 ('The Loney', 25, 'https://i.dailymail.co.uk/i/pix/2016/07/04/16/35F22A7000000578-3673870-image-a-17_1467645858506.jpg', ''),
-('It', 29, 'https://images-na.ssl-images-amazon.com/images/I/71dIjJTeOSL.jpg', 'Terror');
+('It', 29, 'https://images-na.ssl-images-amazon.com/images/I/71dIjJTeOSL.jpg', 'Terror'),
+('Jogos Vorazes', 30, 'https://images-na.ssl-images-amazon.com/images/I/61zBhzjS4LL.jpg', 'Ficção'),
+('Viagens de Gulliver', 31, 'https://img.wook.pt/images/as-viagens-de-gulliver-jonathan-swift/MXwxMDAxNzUyMXw1NjA1ODkxfDEzODM1MjMyMDAwMDA=/250x', 'Ficção'),
+('Escândalos Privados ', 32, 'http://2.bp.blogspot.com/-kogMmM8_7ss/U5d97ReMtHI/AAAAAAAAT0Q/YCuwpa4whfM/s1600/Escandalos+privados.jpg', 'Romance');
 
 -- --------------------------------------------------------
 
@@ -81,13 +84,10 @@ INSERT INTO `Posts` (`tag`, `id`, `titulo`, `texto`, `data`) VALUES
 ('book', 29, ' Post Book', 'Este é um post Book', '2019-10-31'),
 ('comment', 30, 'Comment', 'Este é um Comment', '2019-10-31'),
 ('other', 31, 'Other Post', 'Este é um post qualquer', '2019-10-31'),
-('admin', 32, 'Post dia 1', 'Teste de data post dia 01', '2019-11-01'),
 ('other', 33, 'Profile', 'Criar Tela de profile', '2019-11-01'),
 ('comment', 34, 'Post dia 2', 'Teste de post do dia 2', '2019-11-02'),
-('admin', 35, 'Grupos', 'Criar Card Grupos', '2019-11-02'),
-('admin', 36, 'Delete', 'Criar função delete para posts e livros', '2019-11-03'),
 ('admin', 37, 'Login e Register', 'Fazer o front para o login e register', '2019-11-05'),
-('other', 38, 'Rotas Prontas', 'Todas as Rotas com algum conteudo para mostrar!', '2019-11-05');
+('admin', 58, 'Change Group', 'Mudar Grupos por Doações', '2019-11-07');
 
 -- --------------------------------------------------------
 
@@ -102,6 +102,18 @@ CREATE TABLE `Users` (
   `avatar` varchar(1250) NOT NULL DEFAULT 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png',
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Despejando dados para a tabela `Users`
+--
+
+INSERT INTO `Users` (`nome`, `email`, `senha`, `avatar`, `id`) VALUES
+('Teste', 'teste@teste.com', 'teste', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 9),
+('Cristian Raffi', 'teste@teste', 'teste', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 13),
+('Sniper Leonel', 'sniperleonel@gmail.com', 'sniper', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 14),
+('Peil', 'peil@peil.com', 'peil', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 15),
+('Carinha lá', 'teste@teste', 'teste', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 16),
+('carolina', 'carolroluz@hotmail.com', 'amordaminhavida', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 17);
 
 --
 -- Índices de tabelas apagadas
@@ -133,19 +145,19 @@ ALTER TABLE `Users`
 -- AUTO_INCREMENT de tabela `Livros`
 --
 ALTER TABLE `Livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT de tabela `Posts`
 --
 ALTER TABLE `Posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
 -- AUTO_INCREMENT de tabela `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
