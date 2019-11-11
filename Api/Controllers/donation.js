@@ -3,14 +3,15 @@ const router = express.Router();
 
 const bancoDeDados = require('./bancoDeDados');
 
-
 // CADASTRA UM NOVA DOAÇÃO
 router.post('/', (request, response) => {
     let titulo = request.body.titulo;
+    let numero = request.body.numero;
+    let estado = request.body.estado;
+    let email = request.body.email;
     let capa = request.body.capa;
-    let tag = request.body.tag;
-    if (titulo && capa && tag) {
-        bancoDeDados.conexao.query(`insert into Donations (titulo, capa, tag) values ('${titulo}', '${capa}', '${tag}')`, (erro, resposta) => {
+    if (titulo && numero && estado && email && capa) {
+        bancoDeDados.conexao.query(`insert into Donations (titulo, numero, estado, email, capa) values ('${titulo}', '${numero}', '${estado}', '${email}','${capa}')`, (erro, resposta) => {
             if (!erro)
                 response.status(200).json({ Resposta: resposta });
             else
@@ -23,7 +24,7 @@ response.status(404).send( 'Erro na validação dos campos!');
 // RETORNA TODAS AS DOAÇÕES
 router.get('/', (request, response) => {
 
-    bancoDeDados.conexao.query(`select * from Donations ORDER BY id DESC`, (erro, resultado) => {
+    bancoDeDados.conexao.query(`select * from Donations`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }

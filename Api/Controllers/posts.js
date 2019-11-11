@@ -3,7 +3,7 @@ const router = express.Router();
 
 const bancoDeDados = require('./bancoDeDados');
 
-// CADASTRA UM NOVO Post
+// CADASTRA UM NOVO POST
 router.post('/', (request, response) => {
     let titulo = request.body.titulo;
     let texto = request.body.texto;
