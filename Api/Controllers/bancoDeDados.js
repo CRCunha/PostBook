@@ -9,6 +9,7 @@ let conexao = mysql.createConnection(
         charset: 'utf8'
     });
 
+// eslint-disable-next-line eqeqeq
 if (conexao.state != 'authenticated')
     conexao.connect();
 
