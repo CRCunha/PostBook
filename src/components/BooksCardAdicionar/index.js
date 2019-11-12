@@ -1,6 +1,5 @@
 import React from 'react'
 import './booksCard.css'
-import Excluir from './IMG/excluir.png'
 import axios from 'axios'
 
 export default class BooksCardCardPost extends React.Component{

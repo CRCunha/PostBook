@@ -1,12 +1,14 @@
 import React from 'react'
 import './donations.css'
 
-import CardDonation from '../CardDonation'
+import ListarDonations from '../ListarDonations'
+import CardDonationAdicionar from '../CardDonationAdicionar'
 
 const Donations = () => (
     <div className="donations">
         <div className="container">
-            <CardDonation />
+            <CardDonationAdicionar />
+            <ListarDonations />
         </div>
     </div>
 );

@@ -4,6 +4,8 @@ import Posts from './posts'
 import Livros from './livros'
 import ListarUsers from '../ListarUsers'
 import VegHouse from './IMG/vegHouse.svg'
+import TheVoid from './IMG/TheVoid.png'
+import Gatel from './IMG/Gatel.png'
 import Carousel from 're-carousel'
 
 const ContentHome = () => (
@@ -11,9 +13,17 @@ const ContentHome = () => (
         <div className="container">
             <div className="left">
                 <div className="div1" id="div">
-                    <a href="https://peil.dev/vegHouse" target="_blanck">
-                        <img src={VegHouse} alt="Veg House"/>
-                    </a>
+                    <Carousel loop auto interval={3500} transitionTime>
+                        <a href="https://peil.dev/vegHouse" target="_blanck">
+                            <img src={VegHouse} alt="Veg House"/>
+                        </a>
+                        <a href="https://github.com/damassa/the-void" target="_blanck">
+                            <img src={TheVoid} alt="The Void" id="void"/>
+                        </a>
+                        <a href="https://github.com/CristianoRC/Gatel" target="_blanck">
+                            <img src={Gatel} alt="Gatel"/>
+                        </a>
+                    </Carousel>
                 </div>
                 <div className="div2" id="div">
                     <div className="container">

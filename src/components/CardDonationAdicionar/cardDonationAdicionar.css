@@ -1,0 +1,18 @@
+.cardDonationAdicionar{
+    width: 410px;
+    height: 245px;
+
+    margin-right: 30px;
+
+    border: dashed 5px rgba(121, 121, 121, 0.164);
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.cardDonationAdicionar img{
+    width: 22%;
+
+    cursor: pointer;
+}
