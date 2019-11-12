@@ -13,7 +13,8 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "yarn": "^1.19.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +23,32 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/alt-text": [
+        2,
+        {
+          "elements": [
+            "img",
+            "object",
+            "area",
+            "input[type=\"image\"]"
+          ],
+          "img": [
+            "Image"
+          ],
+          "object": [
+            "Object"
+          ],
+          "area": [
+            "Area"
+          ],
+          "input[type=\"image\"]": [
+            "InputImage"
+          ]
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
