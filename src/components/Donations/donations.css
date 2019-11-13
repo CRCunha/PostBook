@@ -4,14 +4,15 @@
 
     display: var(--flex);
     justify-content: var(--center);
-    align-items: var(--flex-end);
+    align-items: var(--center);
 }
 .donations .container{
-    margin-bottom: 20px;
-    width: 85%;
+    margin-top: 10px;
+    width: 89%;
     height: 90%;
 
     display: var(--flex);
+    justify-content: var(--flex-start);
     flex-wrap: var(--wrap);
 
     overflow-y: auto;

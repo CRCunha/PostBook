@@ -1,6 +1,6 @@
 .cardDonation{
-    width: 420px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
 
     background-color: #fff;
 
@@ -8,6 +8,11 @@
 
     display: var(--flex);
     flex-wrap: var(--nowrap);
+
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .cardDonation .leftContent{
@@ -20,39 +25,88 @@
 }
 
 .cardDonation .leftContent .infos{
+    margin-top: -15px;
     width: 80%;
     height: 80%;
 }
 
 .cardDonation .leftContent .infos .content{
     width: 100%;
-    height: 40px;
+    height: 39px;
+    
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--flex-start);
+    flex-wrap: var(--wrap);
 
     margin-top: 5px;
 
     color: #878787;
-    font-size: 11pt;
+    font-size: 9pt;
 }
 
 .cardDonation .rightContent{
-    width: 40%;
-    height: 100%;
+    width: 49%;
+    height: 110%;
+
+    margin-top: -9px;
 
     display: var(--flex);
     justify-content: var(--flex-start);
     align-items: var(--center);
+
+    box-shadow: var(--box-shadow);
+}
+
+#Usado{
+    border-left: solid 8px #FECA4F;
+}
+#Novo{
+    border-left: solid 8px #9DEE8F;
+}
+#Velho{
+    border-left: solid 8px #FF9C9A;
+}
+
+.Usado{
+    width: 70%;
+    text-align: var(--center);
+    color: #fff;
+    font-size: 8pt;
+    padding: 4px 0px;
+    border-radius: 3px;
+    background-color: #FECA4F;
+}
+.Novo{
+    width: 70%;
+    text-align: var(--center);
+    color: #fff;
+    font-size: 8pt;
+    padding: 4px 0px;
+    border-radius: 3px;
+    background-color: #9DEE8F;
+}
+.Velho{
+    width: 70%;
+    text-align: var(--center);
+    color: #fff;
+    font-size: 8pt;
+    padding: 4px 0px;
+    border-radius: 3px;
+    background-color: #FF9C9A;
 }
 
 .cardDonation .rightContent .book{
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
 
     background-position: var(--center);
     background-size: var(--cover);
-    background-color: #00DED3;
+    border-left: #00DED3;
 }
 
 .cardDonation .rightContent .book img{
     width: 100%;
     height: 100%;
 }
+

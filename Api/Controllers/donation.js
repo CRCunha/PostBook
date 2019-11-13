@@ -8,10 +8,10 @@ router.post('/', (request, response) => {
     let titulo = request.body.titulo;
     let numero = request.body.numero;
     let estado = request.body.estado;
-    let email = request.body.email;
+    let nome = request.body.nome;
     let capa = request.body.capa;
-    if (titulo && numero && estado && email && capa) {
-        bancoDeDados.conexao.query(`insert into Donations (titulo, numero, estado, email, capa) values ('${titulo}', '${numero}', '${estado}', '${email}','${capa}')`, (erro, resposta) => {
+    if (titulo && numero && estado && nome && capa) {
+        bancoDeDados.conexao.query(`insert into Donations (titulo, numero, estado, nome, capa) values ('${titulo}', '${numero}', '${estado}', '${nome}','${capa}')`, (erro, resposta) => {
             if (!erro)
                 response.status(200).json({ Resposta: resposta });
             else

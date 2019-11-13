@@ -6,7 +6,7 @@ export default class Posts extends React.Component {
         titulo: '',
         numero: '',
         estado: '',
-        email: '',
+        nome: '',
         capa: '',
     }
 
@@ -19,8 +19,8 @@ export default class Posts extends React.Component {
     handleEstado = event => {
         this.setState({ estado: event.target.value });
     }
-    handleEmail = event => {
-        this.setState({ email: event.target.value });
+    handleNome = event => {
+        this.setState({ nome: event.target.value });
     }
     handleCapa = event => {
         this.setState({ capa: event.target.value });
@@ -33,7 +33,7 @@ export default class Posts extends React.Component {
         titulo: this.state.titulo,
         numero: this.state.numero,
         estado: this.state.estado,
-        email: this.state.email,
+        nome: this.state.email,
         capa: this.state.capa
     };
 
@@ -53,9 +53,9 @@ export default class Posts extends React.Component {
                     <option disabled selected value="">Selecione o Estado do Livro</option>
                     <option value="Novo">Novo</option>
                     <option value="Usado">Usado</option>
-                    <option value="Velo">Velho</option>
+                    <option value="Velho">Velho</option>
                 </select>
-                <input type="email" name="email" placeholder="Email" autoComplete="off" onChange={this.handleEmail}/>
+                <input type="text" name="nome" placeholder="Nome" autoComplete="off" onChange={this.handleNome}/>
                 <input type="number" name="numero" placeholder="Numero" autoComplete="off" onChange={this.handleNumero}/>
                 <input type="text" name="capa" placeholder="Capa" autoComplete="off" onChange={this.handleCapa} />
                 <input type="submit" name="enviar" value="Enviar"/>

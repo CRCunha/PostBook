@@ -18,7 +18,7 @@ export default class Posts extends React.Component {
     render() {
         return (
             <>
-                { this.state.Posts.map(Posts => <CardDonation titulo={Posts.titulo} numero={Posts.numero} estado={Posts.estado} email={Posts.email} capa={Posts.capa} ></CardDonation>)}
+                { this.state.Posts.map(Posts => <CardDonation titulo={Posts.titulo} numero={Posts.numero} estado={Posts.estado} nome={Posts.nome} capa={Posts.capa} ></CardDonation>)}
             </>
         )
     }

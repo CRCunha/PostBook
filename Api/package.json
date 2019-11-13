@@ -1,5 +1,5 @@
 {
-  "name": "api-merenda",
+  "name": "api-postbook",
   "version": "0.0.1",
   "description": "Api criada para estudar Java scrip",
   "main": "server.js",
