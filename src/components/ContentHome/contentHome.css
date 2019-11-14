@@ -55,6 +55,10 @@
     width: 50%;
 }
 
+#carepair{
+    width: 50%;
+}
+
 .contentHome .container .left .div2{
     width: 100%;
     height: 60%;
@@ -189,6 +193,10 @@
     width: 30%;
     height: 100%;
 
+    background-image: url("IMG/card1.png");
+    background-position: var(--center);
+    background-size: var(--cover);
+
     background-color: #FECA4F;
 }
 
@@ -196,12 +204,21 @@
     width: 30%;
     height: 100%;
 
+    background-image: url("IMG/card2.png");
+    background-position: var(--center);
+    background-size: var(--cover);
+
+
     background-color: #FF9C9A;
 }
 
 .contentHome .container .center .botton .div4{
     width: 30%;
     height: 100%;
+
+    background-image: url("IMG/card3.png");
+    background-position: var(--center);
+    background-size: var(--cover);
 
     background-color: #00DED3;
 }

@@ -33,7 +33,7 @@ export default class Posts extends React.Component {
         titulo: this.state.titulo,
         numero: this.state.numero,
         estado: this.state.estado,
-        nome: this.state.email,
+        nome: this.state.nome,
         capa: this.state.capa
     };
 

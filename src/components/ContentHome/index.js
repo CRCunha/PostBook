@@ -6,6 +6,7 @@ import ListarUsers from '../ListarUsers'
 import VegHouse from './IMG/vegHouse.svg'
 import TheVoid from './IMG/TheVoid.png'
 import Gatel from './IMG/Gatel.png'
+import CarePair from './IMG/carepair.png'
 import Carousel from 're-carousel'
 
 const ContentHome = () => (
@@ -22,6 +23,9 @@ const ContentHome = () => (
                         </a>
                         <a href="https://github.com/CristianoRC/Gatel" target="_blanck">
                             <img src={Gatel} alt="Gatel"/>
+                        </a>
+                        <a href="https://github.com/" target="_blanck">
+                            <img id="carepair" src={CarePair} alt="Gatel"/>
                         </a>
                     </Carousel>
                 </div>
