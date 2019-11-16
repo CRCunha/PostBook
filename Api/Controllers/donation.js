@@ -24,7 +24,7 @@ response.status(404).send( 'Erro na validação dos campos!');
 // RETORNA TODAS AS DOAÇÕES
 router.get('/', (request, response) => {
 
-    bancoDeDados.conexao.query(`select * from Donations`, (erro, resultado) => {
+    bancoDeDados.conexao.query(`select * from Donations Order By id DESC`, (erro, resultado) => {
         if (!erro) {
             response.status(200).json(resultado);
         }
