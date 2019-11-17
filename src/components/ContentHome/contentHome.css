@@ -235,6 +235,8 @@
     background-color: #fff;
 
     margin-bottom: 30px;
+
+    overflow-x: none;
 }
 
 .contentHome .container .right .top .container{

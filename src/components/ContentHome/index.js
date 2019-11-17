@@ -14,7 +14,7 @@ const ContentHome = () => (
         <div className="container">
             <div className="left">
                 <div className="div1" id="div">
-                    <Carousel loop auto interval={3500} transitionTime>
+                    <Carousel loop auto interval={4000} transitionTime>
                         <a href="https://peil.dev/vegHouse" target="_blanck">
                             <img src={VegHouse} alt="Veg House"/>
                         </a>

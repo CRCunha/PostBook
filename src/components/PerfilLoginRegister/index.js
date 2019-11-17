@@ -11,17 +11,17 @@ class PerfilLoginRegister extends React.Component {
         this.hideDialogLog = this.hideDialogLog.bind(this);
     }
     hideDialogReg(){
-        this.setState({dialog: false})
+        this.setState({dialogReg: false})
     }
     showDialogReg(){
-        this.setState({dialog: true})
+        this.setState({dialogReg: true})
     }
 
     hideDialogLog(){
-        this.setState({dialog: false})
+        this.setState({dialogLog: false})
     }
     showDialogLog(){
-        this.setState({dialog: true})
+        this.setState({dialogLog: true})
     }
 
 
@@ -30,7 +30,7 @@ class PerfilLoginRegister extends React.Component {
             <div>
                 <div className="btnLogin" id="btn" onClick={()=>{this.showDialogLog()}}>Login</div>
                 <div className="btnRegister" id="btn" onClick={()=>{this.showDialogReg()}}>Register</div>
-                <ModalRegister show={this.state.dialog} close={this.hideDialogReg} />
+                <ModalRegister show={this.state.dialogReg} close={this.hideDialogReg} />
                 <ModalLogin show={this.state.dialogLog} close={this.hideDialogLog}/>
             </div>
         )
