@@ -16,6 +16,21 @@ router.get('/', (request, response) => {
     }); 
 });
 
+// VERIFICA USER
+router.get('/:email', (request, response) => {
+
+    let email = request.params.email;
+
+    bancoDeDados.conexao.query(`SELECT * FROM Users where '${email}' = email`, (erro, resultado) => {
+        if (!erro) {
+            response.status(200).json(resultado);
+        }
+        else {
+            response.status(400).json({ erro: erro });
+        }
+    }); 
+});
+
 // CADASTRA UM NOVO USER
 router.post('/', (request, response) => {
     let nome = request.body.nome;
