@@ -17,3 +17,9 @@
 
     overflow-y: auto;
 }
+
+@media only screen and (max-width: 450px) {
+    .donations{
+        height: 77vh;
+    }
+}

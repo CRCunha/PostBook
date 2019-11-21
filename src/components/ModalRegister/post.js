@@ -38,9 +38,9 @@ export default class Posts extends React.Component {
     render() {
         return (
             <form onSubmit={this.enviarPost}>
-                <input type="text" placeholder="Nome" onChange={this.handleNome}/>
-                <input type="email" placeholder="Email" onChange={this.handleEmail}/>
-                <input type="password" placeholder="Senha" onChange={this.handleSenha}/>
+                <input type="text" placeholder="Nome" onChange={this.handleNome} autocomplete="off"/>
+                <input type="email" placeholder="Email" onChange={this.handleEmail} autocomplete="off"/>
+                <input type="password" placeholder="Senha" onChange={this.handleSenha} autocomplete="off"/>
                 <input type="submit" value="Registrar"/>
             </form>
         )

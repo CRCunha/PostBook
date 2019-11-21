@@ -7,12 +7,43 @@
     align-items: var(--center);
 }
 
-.perfil .container{
-    width: 60%;
-    height: 300px;
+.perfil .containerPerfil{
+    width: 90%;
+    height: 90%;
 
     display: var(--flex);
     justify-content: var(--space-around);
-    align-items: var(--center);
-    flex-wrap: var(--nowrap);
+    align-items: var(--flex-start);
+    flex-wrap: var(--wrap);
+
+    overflow-y: auto;
+}
+
+/*LOGADO */
+
+.containers{
+    width: 200px;
+    height: 280px;
+
+    box-shadow: var(--box-shadow);
+
+    background-color: #fff;
+
+    margin-bottom: 40px;
+}
+
+#email{
+    width: 350px;
+}
+
+#senha{
+    width: 400px;
+}
+
+#avatar{
+    width: 400px;
+}
+
+#name {
+    width: 350px;
 }

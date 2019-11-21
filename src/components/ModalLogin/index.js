@@ -1,9 +1,10 @@
 import React from 'react'
-import './modalRegister.css'
+import './modalLogin.css'
 import CloseIcon from './IMG/close.png'
 import Post from './post'
 
 class ModalLogin extends React.Component {
+    
     render(){
         return(
             this.props.show? 

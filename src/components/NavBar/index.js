@@ -29,7 +29,7 @@ const NavBar = () => (
             <div className="userControls">
                 <div className="container">
                     <Link to="/adicionarLivro">
-                        <img src={Adicionar} alt="adicionarLivro" />
+                        <img id="adicionar" src={Adicionar} alt="adicionarLivro" />
                     </Link>
                     <Link to="/perfil">
                         <div className="avatar"></div>

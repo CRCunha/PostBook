@@ -154,3 +154,9 @@
 #admin{
     background-color: #9DEE8F;
 }
+
+@media only screen and (max-width: 450px) {
+    .cardPost{
+        margin-left: 5px;
+    }
+}

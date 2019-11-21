@@ -15,7 +15,6 @@ class ModalPost extends React.Component {
                 </div>
                 <Post />
             </div> : ''
-            
         );
     }
 }

@@ -21,7 +21,7 @@ export default class Posts extends React.Component {
         senha: this.state.senha
     };
 
-    axios.get(`http://localhost:3001/api/users/`, Get )
+    axios.get(`http://localhost:3001/api/users/${this.state.email}`, Get)
         .then(res => {
             console.log(res);
             console.log(res.data);
@@ -31,8 +31,8 @@ export default class Posts extends React.Component {
     render() {
         return (
             <form onSubmit={this.Login}>
-                <input type="email" placeholder="Email" onChange={this.handleEmail}/>
-                <input type="password" placeholder="Senha" onChange={this.handleSenha}/>
+                <input type="email" placeholder="Email" onChange={this.handleEmail} autocomplete="off"/>
+                <input type="password" placeholder="Senha" onChange={this.handleSenha} autocomplete="off"/>
                 <input type="submit" value="Logar"/>
             </form>
         )

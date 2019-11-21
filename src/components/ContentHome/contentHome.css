@@ -283,3 +283,33 @@
     justify-content: var(--center);
     align-items: var(--center);
 }
+
+@media only screen and (max-width: 450px) {
+    .contentHome .container{
+        flex-wrap: var(--wrap);
+    }
+    .contentHome .container .left{
+        width: 90%;
+        margin-bottom: -70%;
+    }
+    .contentHome .container .left .div2{
+        height: 0;
+    }
+    .contentHome .container .center{
+        width: 90%;
+        margin-bottom: -32%;
+    }
+    .contentHome .container .center .botton {
+        height: 0;
+    }
+    .contentHome .container .right{
+        width: 90%;
+    }
+    .contentHome .container .right .top{
+        height: 140px;
+    }
+
+    .contentHome .container .right .bot{
+        height: 270px;
+    }
+}

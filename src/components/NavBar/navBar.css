@@ -102,3 +102,36 @@ nav .container .userControls .container .avatar{
 nav .container .userControls .container img{
     cursor: pointer;
 }
+
+@media only screen and (max-width: 450px) {
+    nav{
+        width: 100vw;
+        height: 130px;
+    }
+    nav .container{
+        width: 95%;
+        justify-content: var(--space-around);
+        align-items: var(--center);
+        flex-wrap: var(--wrap);
+    }
+    nav .container .logo{
+        display: none;
+    }
+    nav .container .menu{
+        margin-top: -20px;
+        width: 100%;
+    }
+    
+    nav .container .userControls{
+        margin-top: -60px;
+        height: 30px;
+        width: 30%;
+    }
+    nav .container .userControls .container{
+        width: 100%;
+        justify-content: var(--space-around);
+    }
+    #adicionar{
+        width: 110%;
+    }
+}
