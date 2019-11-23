@@ -8,7 +8,7 @@ export default class Posts extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`http://192.168.0.9:3001/api/donation/`)
+        axios.get(`http://localhost:3001/api/donation/`)
             .then(res => {
             const Posts = res.data;
             this.setState({ Posts });

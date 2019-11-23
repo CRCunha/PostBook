@@ -1,6 +1,6 @@
-import React from 'react';
-import axios from 'axios';
-import CardUsers from '../CardUsers'
+import React                from 'react';
+import axios                from 'axios';
+import CardUsers            from '../CardUsers'
 
 export default class Posts extends React.Component {
     state = {
@@ -8,7 +8,7 @@ export default class Posts extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`http://192.168.0.9:3001/api/users/`)
+        axios.get(`http://localhost:3001/api/users/`)
             .then(res => {
             const Posts = res.data;
             this.setState({ Posts });

@@ -5,12 +5,20 @@ export default class Posts extends React.Component {
     state = {
         email: '',
         senha: '',
+        nome: 'Teste',
     }
+
     handleEmail = event => {
         this.setState({ email: event.target.value });
     }
+    
     handleSenha = event => {
         this.setState({ senha: event.target.value });
+    }
+
+    handleLogin = event => {
+        this.setState({nome: this.state.email})
+        console.log(this.state.nome)
     }
 
     Login = event => {
@@ -19,22 +27,23 @@ export default class Posts extends React.Component {
     const Get = {
         email: this.state.email,
         senha: this.state.senha
-    };
+    }
 
     axios.get(`http://localhost:3001/api/users/${this.state.email}`, Get)
         .then(res => {
-            console.log(res);
-            console.log(res.data);
+            console.log(res.data)
         })
     }
 
     render() {
         return (
-            <form onSubmit={this.Login}>
-                <input type="email" placeholder="Email" onChange={this.handleEmail} autocomplete="off"/>
-                <input type="password" placeholder="Senha" onChange={this.handleSenha} autocomplete="off"/>
-                <input type="submit" value="Logar"/>
-            </form>
+            <>
+                <form onSubmit={this.Login}>
+                    <input type="email" placeholder="Email" onChange={this.handleEmail} autoComplete='off'/>
+                    <input type="password" placeholder="Senha" onChange={this.handleSenha} autoComplete='off'/>
+                    <input type="submit" value='Enviar'  onClick={this.handleLogin} />
+                </form>
+            </>
         )
     }
 }
