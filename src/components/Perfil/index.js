@@ -1,16 +1,31 @@
 import React from 'react'
 import './perfil.css'
-// import PerfilLoginRegister from '../PerfilLoginRegister'
+import Logged from './logged'
+import NLogged from './nLogged'
 
-const Perfil = () => (
-    <div className="perfil">
-        <div className="containerPerfil">
-            <div className="containers" id="avatar" />
-            <div className="containers" id="email" />
-            <div className="containers" id="senha" />
-            <div className="containers" id="name" />
-        </div>
-    </div>
-);
+class Perfil extends React.Component{
+
+    render(){
+        
+        let logged = document.cookie
+        let comp;
+
+        console.log(document.cookie)
+
+        if(logged === 'isLogged'){
+            comp = <Logged />
+        }
+        else{
+            if(logged !== 'isLogged'){
+                comp = <NLogged />
+            }
+        }
+
+        return(
+            comp
+        )
+    }
+}
+
 
 export default Perfil;

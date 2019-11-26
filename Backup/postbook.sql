@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 16/11/2019 às 09:13
--- Versão do servidor: 10.4.8-MariaDB
--- Versão do PHP: 7.3.11
+-- Tempo de geração: 25-Nov-2019 às 12:27
+-- Versão do servidor: 10.4.6-MariaDB
+-- versão do PHP: 7.1.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `Donations`
+-- Estrutura da tabela `Donations`
 --
 
 CREATE TABLE `Donations` (
@@ -38,7 +38,7 @@ CREATE TABLE `Donations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `Donations`
+-- Extraindo dados da tabela `Donations`
 --
 
 INSERT INTO `Donations` (`titulo`, `numero`, `nome`, `estado`, `capa`, `id`) VALUES
@@ -54,7 +54,7 @@ INSERT INTO `Donations` (`titulo`, `numero`, `nome`, `estado`, `capa`, `id`) VAL
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `Livros`
+-- Estrutura da tabela `Livros`
 --
 
 CREATE TABLE `Livros` (
@@ -65,7 +65,7 @@ CREATE TABLE `Livros` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Despejando dados para a tabela `Livros`
+-- Extraindo dados da tabela `Livros`
 --
 
 INSERT INTO `Livros` (`titulo`, `id`, `capa`, `tag`) VALUES
@@ -157,7 +157,7 @@ INSERT INTO `Livros` (`titulo`, `id`, `capa`, `tag`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `Posts`
+-- Estrutura da tabela `Posts`
 --
 
 CREATE TABLE `Posts` (
@@ -169,7 +169,7 @@ CREATE TABLE `Posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Despejando dados para a tabela `Posts`
+-- Extraindo dados da tabela `Posts`
 --
 
 INSERT INTO `Posts` (`tag`, `id`, `titulo`, `texto`, `data`) VALUES
@@ -179,13 +179,12 @@ INSERT INTO `Posts` (`tag`, `id`, `titulo`, `texto`, `data`) VALUES
 ('admin', 74, 'Login', 'Fixar o Front do Login', '2019-11-14'),
 ('admin', 75, 'Perfil', 'Criar a page de Perfil', '2019-11-14'),
 ('admin', 76, 'Donations', 'Reformular Donations UI/UX', '2019-11-14'),
-('admin', 77, 'registro ', 'arrumar o registro ', '2019-11-14'),
-('admin', 78, '****', 'I S2 u', '2019-11-14');
+('admin', 77, 'registro ', 'arrumar o registro ', '2019-11-14');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `Users`
+-- Estrutura da tabela `Users`
 --
 
 CREATE TABLE `Users` (
@@ -197,7 +196,7 @@ CREATE TABLE `Users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `Users`
+-- Extraindo dados da tabela `Users`
 --
 
 INSERT INTO `Users` (`nome`, `email`, `senha`, `avatar`, `id`) VALUES
@@ -207,38 +206,39 @@ INSERT INTO `Users` (`nome`, `email`, `senha`, `avatar`, `id`) VALUES
 ('Peil', 'peil@peil.com', 'peil', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 15),
 ('Carinha lá', 'teste@teste', 'teste', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 16),
 ('carolina', 'carolroluz@hotmail.com', 'amordaminhavida', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 17),
-('', '', '', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 18);
+('', '', '', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 18),
+('asdasd', 'asdasD@sadasd', 'sadasdasd', 'https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png', 19);
 
 --
--- Índices de tabelas apagadas
+-- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `Donations`
+-- Índices para tabela `Donations`
 --
 ALTER TABLE `Donations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `Livros`
+-- Índices para tabela `Livros`
 --
 ALTER TABLE `Livros`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `Posts`
+-- Índices para tabela `Posts`
 --
 ALTER TABLE `Posts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `Users`
+-- Índices para tabela `Users`
 --
 ALTER TABLE `Users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
@@ -251,19 +251,19 @@ ALTER TABLE `Donations`
 -- AUTO_INCREMENT de tabela `Livros`
 --
 ALTER TABLE `Livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT de tabela `Posts`
 --
 ALTER TABLE `Posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT de tabela `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -17,12 +17,12 @@ router.get('/', (request, response) => {
 });
 
 // VERIFICA USER
-router.get('/:email', (request, response) => {
+router.post('/:email', (request, response) => {
 
     let email = request.params.email;
 
     bancoDeDados.conexao.query(`SELECT * FROM Users where '${email}' = email`, (erro, resultado) => {
-        if (!erro) {
+        if (!erro || this.Array.length.bind(this)) {
             response.status(200).json(resultado);
         }
         else {

@@ -16,23 +16,26 @@ export default class Posts extends React.Component {
     Login = event => {
         event.preventDefault();
 
-    const Get = {
+        document.cookie = 'isLogged';
+
+    const Post = {
         email: this.state.email,
         senha: this.state.senha
     };
 
-    axios.get(`http://localhost:3001/api/users/${this.state.email}`, Get)
+    axios.post(`http://localhost:3001/api/users/${this.state.email}`, Post)
         .then(res => {
             console.log(res);
             console.log(res.data);
         })
+        window.location.reload()
     }
 
     render() {
         return (
             <form onSubmit={this.Login}>
-                <input type="email" placeholder="Email" onChange={this.handleEmail} autocomplete="off"/>
-                <input type="password" placeholder="Senha" onChange={this.handleSenha} autocomplete="off"/>
+                <input type="email" placeholder="Email" onChange={this.handleEmail} autoComplete="off"/>
+                <input type="password" placeholder="Senha" onChange={this.handleSenha} autoComplete="off"/>
                 <input type="submit" value="Logar"/>
             </form>
         )

@@ -8,7 +8,7 @@ export default class Livros extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`http://192.168.0.9:3001/api/livros/`)
+        axios.get(`http://localhost:3001/api/livros/`)
             .then(res => {
             const Livros = res.data;
             this.setState({ Livros });

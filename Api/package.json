@@ -29,5 +29,8 @@
     "express": "^4.17.0",
     "mysql": "^2.17.1",
     "run": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
   }
 }
