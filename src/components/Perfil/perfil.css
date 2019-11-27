@@ -34,16 +34,71 @@
 
 #email{
     width: 350px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
 }
 
 #senha{
     width: 400px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
 }
 
 #avatar{
     width: 400px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
 }
 
 #name {
     width: 350px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.containerComponent{
+    width: 80%;
+    height: 80%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+button{
+    width: 50%;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+    background-color: #cacaca;
+    color: #fff;
+    font-size: 11pt;
+    outline: none;
+}
+
+.perfil .logout{
+    top: 40%;
+    position: relative;
+    background-color: #DEDCE0;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.perfil .logout:hover{
+    background-color: #DEDCE0;
+}
+
+.perfil .logout img{
+    width: 40%;
+    margin-left: 5px;
 }

@@ -66,6 +66,14 @@ nav .container .menu a .menuBtn{
     color: #878787;
 
     cursor: pointer;
+
+    transition: .5s;
+}
+
+nav .container .menu a .menuBtn:hover{
+    color: #FED33B;
+
+    transition: .5s;
 }
 
 nav .container .userControls{

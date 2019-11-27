@@ -1,6 +1,6 @@
-import React from 'react';
-import axios from 'axios';
-import CardUsers from '../CardUsers'
+import React                from 'react';
+import axios                from 'axios';
+import CardUsers            from '../CardUsers'
 
 export default class Posts extends React.Component {
     state = {
