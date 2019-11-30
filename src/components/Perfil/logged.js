@@ -5,8 +5,15 @@ import Fab from '@material-ui/core/Fab';
 import LogOut from './IMG/logout.png'
 import Button from '@material-ui/core/Button';
 
-const logged = () => (
-    <>
+export default class logged extends React.Component{
+
+    handleCookies = () => {
+        document.cookie  = ''
+        window.location = 'http://localhost:3000/perfil'
+    }
+
+    render() {
+        return(
         <div className="perfil">
             <div className="containerPerfil">
                 <div className="containers" id="avatar" >
@@ -35,10 +42,9 @@ const logged = () => (
                 </div>
             </div>
             <Fab className="logout" color="primary" aria-label="add">
-                <img src={LogOut} alt="logout" />
+                <img src={LogOut} alt="logout" onClick={this.handleCookies} />
             </Fab>
         </div>
-    </>
-)
-
-export default logged;
+        )
+    }   
+}
