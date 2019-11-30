@@ -87,7 +87,7 @@ button{
 .perfil .logout{
     top: 40%;
     position: relative;
-    background-color: #DEDCE0;
+    background-color: #FFFFFF;
 
     display: var(--flex);
     justify-content: var(--center);
