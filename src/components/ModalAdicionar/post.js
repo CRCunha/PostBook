@@ -1,6 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
 export default class PersonList extends React.Component {
     state = {
         titulo: '',
@@ -38,20 +43,19 @@ export default class PersonList extends React.Component {
     render() {
         return (
             <form onSubmit={this.cadastrarLivro}>
-                <input type="text" name="titulo" placeholder="Titulo" autoComplete="off" onChange={this.handleTitle}/>
-                <input type="text" name="capa" placeholder="Capa" autoComplete="off" onChange={this.handleCapa}/>
-                <select placeholder="Selecione a Tag do Livro" name="tag" onChange={this.handleTag}>
-                    <option disabled selected value="">Selecione a Tag do Livro</option>
-                    <option value="Programação">Programação</option>
-                    <option value="Ficção">Ficção</option>
-                    <option value="Crônica">Crônica</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Ação">Ação</option>
-                    <option value="Terror">Terror</option>
-                    <option value="Ciências">Ciências</option>
-                    <option value="Comédia">Comédia</option>
-                </select>
-                <input type="submit" name="enviar" value="Enviar"/>
+                <TextField autoComplete='off' className='input' id="standard-basic" label="Titulo"  onChange={this.handleTitle}/>
+                <TextField autoComplete='off' className='input' id="standard-basic" label="Capa"  onChange={this.handleCapa}/>
+                <Select className='inputSelect' labelId="demo-simple-select-label" id="demo-simple-select" onChange={this.handleTag}>
+                    <MenuItem value='Programação'>Programação</MenuItem>
+                    <MenuItem value='Ficção'>Ficção</MenuItem>
+                    <MenuItem value='Crônica'>Crônica</MenuItem>
+                    <MenuItem value='Romance'>Romance</MenuItem>
+                    <MenuItem value='Ação'>Ação</MenuItem>
+                    <MenuItem value='Terror'>Terror</MenuItem>
+                    <MenuItem value='Ciências'>Ciências</MenuItem>
+                    <MenuItem value='Comédia'>Comédia</MenuItem>
+                </Select>
+                <Button className="buttonSubmit" type="submit" variant="outlined">Enviar</Button>
             </form>
         )
     }

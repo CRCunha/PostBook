@@ -41,44 +41,17 @@
     align-items: var(--center);
     flex-wrap: var(--wrap);
     
-    margin-top: 30px;
+    margin-top: -10px;
 }
 
-.modalLogin form input[type="text"], input[type="email"], input[type="password"]{
+.modalLogin form .input{
     width: 72%;
-    height: 30px;
-
-    border: none;
-    border-bottom: solid 2px rgba(0,0,0,0.08);
-
-    color: #cacaca;
-    text-align: var(--center);
-
-    outline: none;
+    height: 20px;
 }
 
-.modalLogin form input[type="submit"]{
-    margin-bottom:15px;
-    margin-top: 15px;
-}
 
-.modalLogin form input::placeholder{
-    color: #cacaca;
-}
-
-.modalLogin form input[type="submit"]{
-    width: 30%;
-    height: 42px;
-
-    border: none;
-
-    cursor: pointer;
-
-    background-color: #cacaca;
-    color: #fff;
-    font-size: 11pt;
-
-    outline: none;
+.modalLogin form .buttonSubmit{
+    margin-top: 30px;
 }
 
 #closeBtn{

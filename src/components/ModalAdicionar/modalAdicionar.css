@@ -41,25 +41,6 @@
     justify-content: var(--space-around);
     align-items: var(--center);
     flex-wrap: var(--wrap);
-    
-    margin-top: 30px;
-}
-
-.modalAdicionar form input[type="text"]{
-    width: 72%;
-    height: 30px;
-
-    border: none;
-    border-bottom: solid 2px rgba(0,0,0,0.08);
-
-    color: #878787;
-    text-align: var(--center);
-
-    outline: none;
-}
-
-.modalAdicionar form input[type="text"]::placeholder{
-    color: #cacaca;
 }
 
 .modalAdicionar form input[type="submit"]{
@@ -77,21 +58,14 @@
     outline: none;
 }
 
-.modalAdicionar form select{
-    width: 32%;
-    height: 30px;
-
-    border: none;
-    border-bottom: solid 2px rgba(0,0,0,0.08);
-
-    background-color: transparent;
-
-    color: #878787;
-    text-align: var(--center);
-
-    outline: none;
+.modalAdicionar form  .input{
+    width: 72%;
+    height: 20px;
+    margin-top: 10px;
 }
 
-.modalAdicionar form select option{
-    text-align: var(--center);
+.modalAdicionar form  .inputSelect{
+    width: 72%;
+    height: 20px;
+    margin-top: 35px;
 }

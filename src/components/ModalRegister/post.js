@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 export default class Posts extends React.Component {
     state = {
         nome: '',
@@ -38,10 +40,10 @@ export default class Posts extends React.Component {
     render() {
         return (
             <form onSubmit={this.enviarPost}>
-                <input type="text" placeholder="Nome" onChange={this.handleNome} autoComplete="off"/>
-                <input type="email" placeholder="Email" onChange={this.handleEmail} autoComplete="off"/>
-                <input type="password" placeholder="Senha" onChange={this.handleSenha} autoComplete="off"/>
-                <input type="submit" value="Registrar"/>
+                <TextField  type="text" autoComplete='off' className='input' id="standard-basic" label="Nome"  onChange={this.handleNome}/>
+                <TextField  type="email" autoComplete='off' className='input' id="standard-basic" label="Email"  onChange={this.handleEmail}/>
+                <TextField  type="password" autoComplete='off' className='input' id="standard-basic" label="Senha"  onChange={this.handleSenha}/>
+                <Button type="submit" className="buttonSubmit" variant="outlined" >Enviar</Button>
             </form>
         )
     }

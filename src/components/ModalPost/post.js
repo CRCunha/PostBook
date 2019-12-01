@@ -23,15 +23,6 @@ export default class Posts extends React.Component {
         this.setState({ tag: event.target.value });
     }
 
-    handleClose = () => {
-        this.setOpen(false);
-    };
-
-    handleOpen = () => {
-        this.setOpen(true);
-    };
-
-
     enviarPost = event => {
         event.preventDefault();
 

@@ -1,6 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 export default class Posts extends React.Component {
     state = {
         titulo: '',
@@ -48,17 +52,16 @@ export default class Posts extends React.Component {
     render() {
         return (
             <form onSubmit={this.enviarPost}>
-                <input type="text" name="titulo" placeholder="Titulo" autoComplete="off" onChange={this.handleTitle}/>
-                <select name="estado" onChange={this.handleEstado}>
-                    <option disabled selected value="">Selecione o Estado do Livro</option>
-                    <option value="Novo">Novo</option>
-                    <option value="Usado">Usado</option>
-                    <option value="Velho">Velho</option>
-                </select>
-                <input type="text" name="nome" placeholder="Nome" autoComplete="off" onChange={this.handleNome}/>
-                <input type="number" name="numero" placeholder="Numero" autoComplete="off" onChange={this.handleNumero}/>
-                <input type="text" name="capa" placeholder="Capa" autoComplete="off" onChange={this.handleCapa} />
-                <input type="submit" name="enviar" value="Enviar"/>
+                <TextField autoComplete='off' className='input' id="standard-basic" label="Titulo"  onChange={this.handleTitle}/>
+                <Select className='input' className="inputSelect" labelId="demo-simple-select-label" id="demo-simple-select" onChange={this.handleEstado}>
+                    <MenuItem value='Novo'>Novo</MenuItem>
+                    <MenuItem value='Usado'>Usado</MenuItem>
+                    <MenuItem value='Velho'>Velho</MenuItem>
+                </Select>
+                <TextField type='number' autoComplete='off' className='input' id="standard-basic" label="Numero"  onChange={this.handleNumero}/>
+                <TextField autoComplete='off' className='input' id="standard-basic" label="Nome"  onChange={this.handleNome}/>
+                <TextField autoComplete='off' className='input' id="standard-basic" label="Capa"  onChange={this.handleCapa}/>
+                <Button className="buttonSubmit" type="submit" variant="outlined">Enviar</Button>
             </form>
         )
     }

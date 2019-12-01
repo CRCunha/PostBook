@@ -18,25 +18,25 @@ export default class logged extends React.Component{
             <div className="containerPerfil">
                 <div className="containers" id="avatar" >
                     <div className="containerComponent">
-                        <TextField id="standard-basic" fullWidth label="Avatar:" />
+                        <TextField autoComplete='off' id="standard-basic" fullWidth label="Avatar:" />
                         <Button variant="outlined">Enviar</Button>
                     </div>
                 </div>
                 <div className="containers" id="email" >
                     <div className="containerComponent">
-                        <TextField id="standard-basic" fullWidth label="Email:" />
+                        <TextField autoComplete='off' id="standard-basic" fullWidth label="Email:" />
                         <Button variant="outlined">Enviar</Button>
                     </div>
                 </div>
                 <div className="containers" id="senha" >
                     <div className="containerComponent">
-                        <TextField id="standard-basic"  fullWidth label="Senha:" />
+                        <TextField autoComplete='off' id="standard-basic"  fullWidth label="Senha:" />
                         <Button variant="outlined">Enviar</Button>
                     </div>
                 </div>
                 <div className="containers" id="name" >
                     <div className="containerComponent">
-                        <TextField id="standard-basic" fullWidth label="Nome:" color='green' />
+                        <TextField autoComplete='off' id="standard-basic" fullWidth label="Nome:" color='green' />
                         <Button variant="outlined">Enviar</Button>
                     </div>
                 </div>
