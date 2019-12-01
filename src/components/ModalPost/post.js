@@ -1,6 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
 export default class Posts extends React.Component {
     state = {
         titulo: '',
@@ -17,6 +22,15 @@ export default class Posts extends React.Component {
     handleTag = event => {
         this.setState({ tag: event.target.value });
     }
+
+    handleClose = () => {
+        this.setOpen(false);
+    };
+
+    handleOpen = () => {
+        this.setOpen(true);
+    };
+
 
     enviarPost = event => {
         event.preventDefault();
@@ -38,16 +52,18 @@ export default class Posts extends React.Component {
     render() {
         return (
             <form onSubmit={this.enviarPost}>
-                <input type="text" name="titulo" placeholder="Titulo" autoComplete="off" onChange={this.handleTitle}/>
-                <select name="tag" onChange={this.handleTag}>
-                    <option disabled selected value="">Selecione a Tag do Post</option>
-                    <option value="book">Book</option>
-                    <option value="comment">Comment</option>
-                    <option value="other">Other</option>
-                    <option value="admin">Admin</option>
-                </select>
-                <input type="text" name="texto" placeholder="Texto" autoComplete="off" onChange={this.handleTexto}/>
-                <input type="submit" name="enviar" value="Enviar"/>
+                <TextField autoComplete='off' className='input' id="standard-basic" label="Titulo"  onChange={this.handleTitle}/>
+            
+                <Select className='inputSelect' labelId="demo-simple-select-label" id="demo-simple-select" onChange={this.handleTag}>
+                    <MenuItem value='book'>Book</MenuItem>
+                    <MenuItem value='comment'>Comment</MenuItem>
+                    <MenuItem value='other'>Other</MenuItem>
+                    <MenuItem value='admin'>Admin</MenuItem>
+                </Select>
+                
+                <TextField autoComplete='off' className='input' id="standard-basic" label="Texto"  onChange={this.handleTexto}/>
+
+                <Button className="buttonSubmit" type="submit" variant="outlined">Enviar</Button>
             </form>
         )
     }

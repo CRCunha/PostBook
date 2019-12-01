@@ -38,59 +38,25 @@
 
     display: var(--flex);
     justify-content: var(--space-around);
-    align-items: var(--center);
+    align-items: var(--flx-start);
     flex-wrap: var(--wrap);
     
     margin-top: 30px;
 }
 
-.modalPost form input[type="text"]{
-    width: 72%;
-    height: 30px;
-
-    border: none;
-    border-bottom: solid 2px rgba(0,0,0,0.08);
-
-    color: #cacaca;
-    text-align: var(--center);
-
-    outline: none;
-}
-
-.modalPost form select{
-    width: 40%;
-    height: 30px;
-
-    border: none;
-    border-bottom: solid 2px rgba(0,0,0,0.08);
-
-    background-color: transparent;
-
-    color: #cacaca;
-    text-align: var(--center);
-
-    outline: none;
-}
-
-.modalPost form select option{
-    text-align: var(--center);
-}
-
-.modalPost form input[type="text"]::placeholder{
-    color: #cacaca;
-}
-
-.modalPost form input[type="submit"]{
+.buttonSubmit{
     width: 30%;
-    height: 42px;
+    margin-top: 20px;
+}
 
-    border: none;
+.modalPost form  .input{
+    width: 72%;
+    height: 20px;
+    margin-top: -20px;
+}
 
-    cursor: pointer;
-
-    background-color: #cacaca;
-    color: #fff;
-    font-size: 11pt;
-
-    outline: none;
+.modalPost form  .inputSelect{
+    width: 72%;
+    height: 20px;
+    margin-top: 25px;
 }
